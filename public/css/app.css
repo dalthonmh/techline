@@ -10655,8 +10655,46 @@ a.text-dark:focus {
   }
 }
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+/* MOVILE FIRST */
+
+.container-navbar {
+  z-index: 1000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+.circle-country img {
+  border: 1px solid #30A920;
+  border-radius: 50%;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  .container-navbar .navbar .nav-link {
+    color: white !important;
+  }
+
+  .container-img-logo img {
+    height: 90px;
+  }
+
+  .navbar-nav .nav-link:nth-child(7) {
+    border-right: 2px solid #eee;
+  }
+
+  .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #30A920;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  /* carusel */
+
+  .carousel-customized {
+    margin-top: -90px;
+  }
 }
 
