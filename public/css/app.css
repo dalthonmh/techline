@@ -10657,24 +10657,84 @@ a.text-dark:focus {
 
 /* MOVILE FIRST */
 
-.container-navbar {
-  z-index: 1000 !important;
+.principal {
+  font-family: "Montserrat", "roboto", "nunito", arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* header */
+  /* carusel */
 }
 
-.navbar-nav .nav-link {
+.principal .container-navbar {
+  /*  z-index: 1000 !important; */
+}
+
+.principal .container-navbar .navbar-nav .nav-link {
+  color: black;
+  font-weight: normal;
+}
+
+.principal .container-navbar .circle-country img {
+  border: 1px solid #30A920;
+  border-radius: 50%;
+}
+
+.principal .carousel-customized {
+  order: 2;
+}
+
+.principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption {
+  text-align: left;
+  z-index: 0;
+}
+
+.principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption h5 .green-color-text {
+  color: #30A920;
   font-weight: bold;
 }
 
-.circle-country img {
-  border: 1px solid #30A920;
-  border-radius: 50%;
+.principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 0.5em;
 }
 
 /* DESKTOP VERSION */
 
 @media (min-width: 992px) {
-  .container-navbar .navbar .nav-link {
+  .principal {
+    /*carusel*/
+  }
+
+  .principal .container-navbar {
+    order: 2;
+    position: absolute;
+    top: 0;
+  }
+
+  .principal .container-navbar .nav-link {
     color: white !important;
+  }
+
+  .principal .carousel-customized {
+    order: 1;
+  }
+
+  .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption {
+    top: 35%;
+    left: 15%;
+  }
+
+  .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 2em;
+  }
+
+  .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 1em;
   }
 
   .container-img-logo img {
@@ -10685,16 +10745,11 @@ a.text-dark:focus {
     border-right: 2px solid #eee;
   }
 
-  .navbar-nav .nav-link:hover {
-    border-bottom: 3px solid #30A920;
+  .navbar-nav .nav-link-cutsom:hover,
+  .active {
     padding-bottom: 5px;
     margin-bottom: -8px;
-  }
-
-  /* carusel */
-
-  .carousel-customized {
-    margin-top: -90px;
+    border-bottom: 3px solid #30A920;
   }
 }
 

@@ -12,6 +12,8 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,81 +23,87 @@
 
 </head>
 
+<body>
+    <main class="principal">
 
-    {{-- navbar --}}
-    <div class="container container-navbar">
-        <div class="row d-flex align-items-center">
-            <div class="col-4 col-lg-3 container-img-logo">
-                <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="">
+        {{-- carusel --}}
+        <div class="carousel-customized">
+    
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="/img/fondo_portada1.jpg" alt="First slide">
+                        <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
+                            <h5 class=""><span class="green-color-text">Epicentro minero</span><br> industrial energético y <br> logístico de Chile y <br> Sudamérica</h5>
+                            <p>Conéctate con la región Antofagasta y aprovecha tus recursos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/fondo_portada2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="/img/fondo_portada3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
             </div>
-            <div class="col-8 col-lg-9">
-                <nav class="navbar navbar-expand-lg navbar-light navbar-customized">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ml-auto text-right">
-                            <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Quienes somos</a>
-                            <a class="nav-item nav-link" href="#">Servicios</a>
-                            <a class="nav-item nav-link" href="#">Proyectos</a>
-                            <a class="nav-item nav-link" href="#">Blog</a>
-                            <a class="nav-item nav-link" href="#">RSE</a>
-                            <a class="nav-item nav-link" href="#">Contáctanos</a>
-                            <div class="dropdown show">
-                                <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Español
-                                </a>
-                                
-                                <div class="dropdown-menu mr-auto" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">
-                                    <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; English</a>
-                                    <a class="dropdown-item" href="#">
-                                    <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Portuguese</a>
-                                    <a class="dropdown-item" href="#">
-                                    <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Francess</a>
+        </div>
+        {{-- fin carusel --}}
+    
+        {{-- navbar --}}
+        <div class="container container-navbar text-center justify-content-center">
+            <div class="row">
+                <div class="col-4 col-lg-3 container-img-logo">
+                    <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="">
+                </div>
+                <div class="col-8 col-lg-9">
+                    <nav class="navbar navbar-expand-lg navbar-light navbar-customized">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto text-right">
+                                <a class="nav-item nav-link nav-link-cutsom active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Quienes somos</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Servicios</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Proyectos</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Blog</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">RSE</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Contáctanos</a>
+                                <div class="dropdown show nav-link-cutsom">
+                                    <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Español
+                                    </a>
+                                    
+                                    <div class="dropdown-menu mr-auto" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">
+                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; English</a>
+                                        <a class="dropdown-item" href="#">
+                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Portuguese</a>
+                                        <a class="dropdown-item" href="#">
+                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Francess</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    {{-- fin navbar --}}
-
-    
-    {{-- carusel --}}
-    <div class="carousel-customized">
-
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="/img/fondo_portada3.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="http://lorempixel.com/1366/768" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="http://lorempixel.com/1366/768" alt="Third slide">
+                    </nav>
                 </div>
             </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
         </div>
-    </div>
+        {{-- fin navbar --}}
+
+    </main>
 
 
-
-<body>
 
 </body>
 
