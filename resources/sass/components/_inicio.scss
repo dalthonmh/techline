@@ -3,11 +3,10 @@
     font-family: 'Montserrat' ,'roboto', 'nunito', arial, sans-serif;
     display: flex;
     flex-direction: column;
-
     /* header */
     .container-navbar{
-       /*  z-index: 1000 !important; */
-    
+       background-color: $grencustom;
+        padding: 0 30px;
         .navbar-nav .nav-link{
             color: black;
            font-weight: normal;
@@ -57,10 +56,17 @@
     .principal{
         
         .container-navbar{
-            order: 2;
+            padding: 0 65px;
             position: absolute;
-            top: 0;
+            order: 2;
+            top: 20px;
+            margin-left:auto;
+            margin-right:auto;
+            left:0;
+            right:0;
+            z-index: 10 !important;
             .nav-link{
+                font-size: .87em;
                 color: white !important;
             }
         }
@@ -97,6 +103,10 @@
         padding-bottom: 5px;
         margin-bottom: -8px;
         border-bottom: 3px solid $grencustom;
+    }
+
+    .navbar-nav .nav-link-cutsom:target{
+        border-bottom: none;
     }
     
 

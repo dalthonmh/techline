@@ -40,9 +40,17 @@
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="/img/fondo_portada2.jpg" alt="Second slide">
+                        <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
+                            <h5 class="">Estamos <br>localizados en el <br> <span class="green-color-text">"Golden Triangle"</span><br>de Sudamérica</h5>
+                            <p>Zona estratégica del desarrollo comercial de América del Sur.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="/img/fondo_portada3.jpg" alt="Third slide">
+                        <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
+                            <h5 class="">Gran cantidad de<br>minas en todo el sur <br> de Sudamérica <br> <span class="green-color-text">Mejor calidad de vida</span></h5>
+                            <p>Mejor ubicación para la mineria industrial costera.</p>
+                        </div>
                     </div>
                 </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -58,12 +66,12 @@
         {{-- fin carusel --}}
     
         {{-- navbar --}}
-        <div class="container container-navbar text-center justify-content-center">
-            <div class="row">
+        <div class="container-navbar ">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-4 col-lg-3 container-img-logo">
                     <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="">
                 </div>
-                <div class="col-8 col-lg-9">
+                <div class="col-8 col-lg-9 ">
                     <nav class="navbar navbar-expand-lg navbar-light navbar-customized">
                         <a class="navbar-brand" href="#"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"

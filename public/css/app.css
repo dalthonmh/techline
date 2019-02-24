@@ -10666,7 +10666,8 @@ a.text-dark:focus {
 }
 
 .principal .container-navbar {
-  /*  z-index: 1000 !important; */
+  background-color: #30A920;
+  padding: 0 30px;
 }
 
 .principal .container-navbar .navbar-nav .nav-link {
@@ -10711,12 +10712,19 @@ a.text-dark:focus {
   }
 
   .principal .container-navbar {
-    order: 2;
+    padding: 0 65px;
     position: absolute;
-    top: 0;
+    order: 2;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 10 !important;
   }
 
   .principal .container-navbar .nav-link {
+    font-size: 0.87em;
     color: white !important;
   }
 
@@ -10750,6 +10758,10 @@ a.text-dark:focus {
     padding-bottom: 5px;
     margin-bottom: -8px;
     border-bottom: 3px solid #30A920;
+  }
+
+  .navbar-nav .nav-link-cutsom:target {
+    border-bottom: none;
   }
 }
 
