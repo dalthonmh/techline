@@ -13841,10 +13841,34 @@ a.text-dark:focus {
   background-color: red;
 }
 
+.container-about .jumbotron-fluid {
+  margin: 0;
+}
+
 .container-about .jumbotron-img {
   background-image: url("/img/antofagasta.jpg");
   background-size: cover;
   height: 320px;
+}
+
+.container-about .jumbotron-img .container {
+  text-align: center;
+}
+
+.container-about .jumbotron-img .container .tag-lugar {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(48, 169, 32, 0.75);
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 200px;
+}
+
+.container-about .jumbotron-text .container .btn-success {
+  background-color: #30A920;
+  color: white;
+  border-radius: 12px;
 }
 
 /* TABLET VERSION */
@@ -13854,15 +13878,35 @@ a.text-dark:focus {
     display: flex;
     background-image: url("/img/antofagasta.jpg");
     background-size: cover;
+    position: relative;
   }
 
   .container-about .jumbotron-img {
     background: none;
     width: 50%;
+    z-index: 1;
+  }
+
+  .container-about .jumbotron-img .container .tag-lugar {
+    margin-top: 310px;
   }
 
   .container-about .jumbotron-text {
+    z-index: 1;
     width: 50%;
+    background: none;
+    color: black;
+  }
+
+  .container-about:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
