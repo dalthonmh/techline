@@ -24,9 +24,10 @@
             .carousel-inner{
                 .carousel-item{
                     .carousel-caption{
-                        
                         text-align: left;
                         z-index: 0;
+                        top: 35%;
+                            left: 15%;
 
                         h5{
                             font-weight: bold;
@@ -48,7 +49,29 @@
 }
 
 
-
+/* TABLET VERSION */
+@media (min-width: 768px) {
+    /*carusel*/
+    .principal{
+        .carousel-customized{
+            order: 1;
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        .carousel-caption{
+                            h5{
+                                font-size: 1.5em;
+                            }
+                            p{
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /* DESKTOP VERSION */
@@ -56,6 +79,7 @@
     .principal{
         
         .container-navbar{
+            background-color: transparent;
             padding: 0 65px;
             position: absolute;
             order: 2;
@@ -72,7 +96,6 @@
         }
         /*carusel*/
         .carousel-customized{
-            order: 1;
             .carousel{
                 .carousel-inner{
                     .carousel-item{

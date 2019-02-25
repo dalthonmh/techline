@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <main class="principal">
+    <section class="principal">
 
         {{-- carusel --}}
         <div class="carousel-customized">
@@ -108,14 +108,35 @@
             </div>
         </div>
         {{-- fin navbar --}}
+        
+        
+    </section>
+    
+    {{--  SECTION QUIENES SOMOS  --}}
+    <section class="container-about">
+        <div class="jumbotron jumbotron-fluid jumbotron-img">
+            <div class="container">
+                <div class="tag-lugar">ANTOFAGASTA - CHILE</div>
+            </div>
+        </div>
 
-    </main>
 
-
+        <div class="jumbotron jumbotron-fluid jumbotron-text">
+            <div class="container ">
+                <h3><i class="fa fa-building"></i> Acerca de nosotros</h3>
+                <h1>TECH LINE Ltda.</h1>
+                <h2>Openning Business Oportunities</h2>
+                <p>Tech Line Ltda. Es una empresa Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque repudiandae pariatur ullam est hic facere consequuntur, nulla aperiam quisquam quo nam mollitia, ipsum sequi voluptatum dolor quaerat laudantium? Optio, incidunt aut. At minus eaque, laudantium neque id ea nisi.</p>
+                <button class="btn btn-success">MÁS SOBRE NOSOTROS</button>
+            </div>
+        </div>
+    </section>
+    {{--  FIN SECCION QUIENES SOMOS  --}}
 
 </body>
 
 </html>
+
 
 
 {{--

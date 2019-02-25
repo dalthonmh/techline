@@ -1,0 +1,37 @@
+/* MOVILE FIRST */
+
+.container-about{
+    background-color: red;
+    
+        .jumbotron-img{
+                background-image: url('/img/antofagasta.jpg');
+                background-size: cover;
+                height: 320px;
+        }
+        .jumbotron-text{
+
+        }
+}
+
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+
+    .container-about{
+        display: flex;
+            background-image: url('/img/antofagasta.jpg');
+            background-size: cover;
+            .jumbotron-img{
+                background: none;
+                width: 50%;
+            }
+            .jumbotron-text{
+                width: 50%;
+            }
+    }
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+}
