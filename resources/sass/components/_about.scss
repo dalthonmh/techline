@@ -23,10 +23,10 @@
         }
         .jumbotron-text{
             .container{
+                padding: 0 35px;
                 .btn-success{
                     background-color: $grencustom;
                     color: white;
-                    border-radius: 12px;
                 }
                 p{
                     text-align: justify;
@@ -74,7 +74,7 @@
         content: '';
         display: block;
         width: 100%;
-        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,255,1));
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 30%, rgba(255,255,255,1) 60%);
         position: absolute;
         top: 0;
         bottom: 0;

@@ -13861,10 +13861,13 @@ a.text-dark:focus {
   margin-top: 200px;
 }
 
+.container-about .jumbotron-text .container {
+  padding: 0 35px;
+}
+
 .container-about .jumbotron-text .container .btn-success {
   background-color: #30A920;
   color: white;
-  border-radius: 12px;
 }
 
 .container-about .jumbotron-text .container p {
@@ -13913,7 +13916,7 @@ a.text-dark:focus {
     content: "";
     display: block;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, white 60%);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -13929,7 +13932,101 @@ a.text-dark:focus {
   margin: 0;
 }
 
+.row .container {
+  padding: 20px 20px;
+}
+
+.row .container .container-servicio .servicio-text h3 {
+  font-size: 1em;
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.row .container .container-servicio .servicio-text p {
+  text-align: justify;
+}
+
+.row .container .container-servicio .servicio-text h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.row .container .container-servicio .servicio-text .servicio-text-img {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.row .container .container-servicio .servicio-text .servicio-text-img img {
+  width: 150px;
+}
+
+.row .container .container-servicio .servicio-text-border {
+  border-top: 1px solid gray;
+  padding-top: 30px;
+}
+
+.row .container .container-servicio .servicio-img {
+  margin: 30px 0;
+}
+
+.row .container .container-servicio .servicio-img img {
+  width: 100%;
+}
+
+.row .container .container-servicio .servicio-img .img-duple {
+  width: 50%;
+  float: left;
+}
+
 /* TABLET VERSION */
 
+@media (min-width: 768px) {
+  .row .container .container-servicio .servicio-text {
+    padding: 30px 40px;
+  }
+
+  .row .container .container-servicio .servicio-text-border {
+    border-top: none;
+    padding-top: none;
+  }
+}
+
 /* DESKTOP VERSION */
+
+/* MOVILE FIRST */
+
+.jumbotron-mercado .container .display-border {
+  font-size: 1.4em;
+  text-align: center;
+  height: 20px;
+}
+
+.jumbotron-mercado .container .display-border::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 20px;
+  border-bottom: 3px solid #30A920;
+}
+
+.jumbotron-mercado .row .container-mercados {
+  padding: 0;
+}
+
+.jumbotron-mercado .row .container-mercados .jumbotron .display-4 {
+  font-size: 1em;
+}
+
+.jumbotron-mercado .row .container-mercados .mercado-1 {
+  background-color: red;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+  .jumbotron-mercado .container .display-border::after {
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
 

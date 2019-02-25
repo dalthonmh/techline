@@ -1,0 +1,42 @@
+/* MOVILE FIRST */
+.jumbotron-mercado{
+    .container{
+        .display-border{
+            font-size: 1.4em;
+            text-align: center;
+            height: 20px;
+        }
+        .display-border::after{
+            content: '';
+            display: block;
+            margin: auto;
+            width: 20px;
+            border-bottom: 3px solid $grencustom;
+        }
+    }
+    .row{
+        .container-mercados{
+            padding: 0;
+            .jumbotron{
+                .display-4{
+                    font-size: 1em;
+                }
+            }
+            .mercado-1{
+                background-color: red;
+            }
+        }
+    }
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+    .jumbotron-mercado{
+        .container{
+            .display-border::after{
+                padding-bottom: 5px;
+                margin-bottom: -8px;
+            }
+        }
+    }
+}

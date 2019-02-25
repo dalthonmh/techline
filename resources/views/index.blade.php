@@ -122,31 +122,133 @@
 
 
         <div class="jumbotron jumbotron-fluid jumbotron-text">
-            <div class="container ">
+            <div class="container">
                 <h3><i class="fa fa-building"></i> Acerca de nosotros</h3>
                 <h1>TECH LINE Ltda.</h1>
                 <h2>Openning Business Oportunities</h2>
-                <p>Tech Line Ltda. Es una empresa Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque repudiandae pariatur ullam est hic facere consequuntur, nulla aperiam quisquam quo nam mollitia, ipsum sequi voluptatum dolor quaerat laudantium? Optio, incidunt aut. At minus eaque, laudantium neque id ea nisi.</p>
+                <p>Tech line ltda. Es una empresa de servicios de ingeniería industrial y comercial, cuyo negocio es la asesoría especializada gestión de proyectos, programas, asesorías y capacitación a empresas chilenas y extranjeras, en desarrollo de nuevos mercados internacionales, en proyectos de transferencia técnica y tecnológica, y en la asesoría para la comercialización import / export de productos y bienes hacia/desde china y Asia.</p>
                 <button class="btn btn-success">MÁS SOBRE NOSOTROS</button>
             </div>
         </div>
     </section>
     {{--  FIN SECCION QUIENES SOMOS  --}}
 
+
+
     {{-- SECTION SERVICIOS --}}
     <div class="row">
-        <div class="col-12 col-md-6">
-            <h3>SERVICIO 1</h3>
-            <h2>Transferencia Tecnológica: <br> Programas y Proyectos</h2>
-            <img src="/img/servicios/icono1_2.png" alt="Transferencia tecnológica">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, libero ipsum nihil odit, tempora officiis, ea voluptatum porro nemo maiores nobis. Magnam, facilis quis ipsa qui aliquid aliquam sed?</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <img src="/img/servicios/s1-1.png" alt="servicio1-1">
-            <img src="/img/servicios/s1-2.png" alt="servicio1-2">
+        <div class="container">
+            {{-- servicio 1 --}}
+            <div class="container-servicio">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 col-costom">
+                        <div class="servicio-text">
+                            <h3>SERVICIO 1</h3>
+                            <h2>Transferencia Tecnológica: <br> Programas y Proyectos</h2>
+                            <div class="servicio-text-img">
+                                <img class="img-fluid ml-auto" src="/img/servicios/icono1_2.png" alt="Transferencia tecnológica">
+                            </div>
+                            <p>Tech Line provee asesoría especializada en ingeniería industrial y comercial. para ayudar a nuestros clientes a desarrollar, organizar y presentar a fuentes de financia- miento nacionales o internacionales, proyectos y/o pro- gramas de introducción y/o adquisición de tecnología. para la mejora competitiva.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-costom">
+                        <div class="servicio-img">
+                            <img class="img-fluid" src="/img/servicios/s1-1.png" alt="servicio1-1">
+                            <img class="img-fluid" src="/img/servicios/s1-2.png" alt="servicio1-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- servicio 2 --}}
+            <div class="container-servicio">
+                <div class="row d-flex flex-row-reverse align-items-center">
+                    <div class="col-12 col-md-6 col-custom">
+                        <div class="servicio-text servicio-text-border">
+                            <h3>SERVICIO 2</h3>
+                            <h2>Desarrollo de Mercados <br>Internacionales</h2>
+                            <div class="servicio-text-img">
+                                <img class="img-fluid ml-auto" src="/img/servicios/icono2_2.png" alt="Transferencia tecnológica">
+                            </div>
+                            <p>Tech Line provee asesoría especializada en ingeniería industrial y comercial, para ayudar a nuestros clientes a incursionar y/o desarrollar nuevas y seguras operaciones comerciales y/o de exportación de bienes, productos y servicios hacia nuevos mercados internacionales. Nuestros mercados objetivo son Perú y China.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-custom">
+                        <div class="servicio-img">
+                            <img class="img-fluid" src="/img/servicios/s2-1.png" alt="servicio2-1">
+                            <img class="img-fluid" src="/img/servicios/s2-2.png" alt="servicio2-2">
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+
+            {{-- servicio 3 --}}
+            <div class="container-servicio">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-6 col-custom">
+                        <div class="servicio-text servicio-text-border">
+                            <h3>SERVICIO 3</h3>
+                            <h2>Importaciones de Commodities <br>Industriales</h2>
+                            <div class="servicio-text-img">
+                                <img class="img-fluid ml-auto" src="/img/servicios/icono3_2.png" alt="Transferencia tecnológica">
+                            </div>
+                            <p>Tech Line provee servicios especializados de ingeniería industrial y comercial, para ayudar a nuestros clientes a importar a chile y/o exportar hacia mercados internacionales, distintos tipos de commodities industriales, como lo son maquinarias, equipos, insumos, materias primas, componentes, partes, entre otros, bajo un esquema de seguridad, confiabilidad y de costos competitivos. Nuestros mercados objetivos son Chi-na,Hhong Kong, Australia, Perú.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-custom">
+                        <div class="servicio-img">
+                            <img class="img-fluid" src="/img/servicios/s3-1.png" alt="servicio3-1">
+                            <img class="img-fluid img-duple" src="/img/servicios/s3-2.png" alt="servicio3-2">
+                            <img class="img-fluid img-duple" src="/img/servicios/s3-3.png" alt="servicio3-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     {{-- FIN SECCION SERVICIOS --}}
+
+    {{-- SECTION MERCADOS OBJETIVOS --}}
+    <section class="jumbotron jumbotron-fluid jumbotron-mercado">
+        <div class="container">
+            <h1 class="display-border">Nuestros <strong>Mercados Objetivos</strong></h1>
+        </div>
+        <div class="row" style="margin:0;">
+            <div class="col-md-3 container-mercados">
+                <div class="jumbotron jumbotron-fluid mercado-1">
+                        <h1 class="display-4">PERÚ</h1>
+                        <p class="lead">Oportunidades en el serctor minero.</p>
+                        <button class="btn btn-success">Ver más</button>
+                </div>
+            </div>
+            <div class="col-md-3 container-mercados">
+                <div class="jumbotron jumbotron-fluid mercado-2">
+                        <h1 class="display-4">CHINA</h1>
+                        <p class="lead">Acceso a nuevos mercados, nuevos clientes, nuevos proveedores en el Asia Pacífico.</p>
+                        <button class="btn btn-success">Ver más</button>
+                </div>
+            </div>
+            <div class="col-md-3 container-mercados">
+                <div class="jumbotron jumbotron-fluid mercado-3">
+                        <h1 class="display-4">HONG KONG</h1>
+                        <p class="lead">Plataforma comercialy financiera en Asia para Pymes de la ZICOSUR.</p>
+                        <button class="btn btn-success">Ver más</button>
+                </div>
+            </div>
+            <div class="col-md-3 container-mercados">
+                <div class="jumbotron jumbotron-fluid mercado-4">
+                        <h1 class="display-4">AUSTRALIA</h1>
+                        <p class="lead">Oportunidades comerciales y tecnológicas para proveedores mineros e industriales.</p>
+                        <button class="btn btn-success">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+{{-- FIN SECCION MERCADOS OBJETIVOS --}}
+
 
 </body>
 

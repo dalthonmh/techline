@@ -3,9 +3,66 @@
 // mejora scroll horizontal bootstrap
 .row{
     margin: 0;
+    .container{
+        padding: 20px 20px;
+        .container-servicio{
+            .servicio-text{
+                h3{
+                    font-size: 1em;
+                    color: gray;
+                    letter-spacing: 1px;
+                }
+                p{
+                    text-align: justify;
+                }
+                h2{
+                    font-weight: bold;
+                    font-size: 1.4em;
+                }
+                .servicio-text-img{
+                    margin: 20px 0;
+                    text-align: center;
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+            .servicio-text-border{
+                border-top: 1px solid gray;
+                padding-top: 30px;
+            }
+
+
+            .servicio-img{
+                margin: 30px 0;
+                img{
+                    width: 100%;
+                }
+                .img-duple{
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+    }
 }
 
 
 /* TABLET VERSION */
+@media (min-width: 768px) {
+    .row{
+        .container{
+            .container-servicio{
+                .servicio-text{
+                    padding: 30px 40px;
+                }
+                .servicio-text-border{
+                    border-top: none;
+                    padding-top: none;
+                } 
+            }
+        }
+    }
+}
 
 /* DESKTOP VERSION */
