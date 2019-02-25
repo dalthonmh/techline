@@ -13837,10 +13837,6 @@ a.text-dark:focus {
 
 /* MOVILE FIRST */
 
-.container-about {
-  background-color: red;
-}
-
 .container-about .jumbotron-fluid {
   margin: 0;
 }
@@ -13871,6 +13867,20 @@ a.text-dark:focus {
   border-radius: 12px;
 }
 
+.container-about .jumbotron-text .container p {
+  text-align: justify;
+}
+
+.container-about .jumbotron-text .container h1 {
+  font-weight: bold;
+}
+
+.container-about .jumbotron-text .container h2 {
+  font-size: 1.2em;
+  color: black;
+  font-weight: 600;
+}
+
 /* TABLET VERSION */
 
 @media (min-width: 768px) {
@@ -13892,8 +13902,9 @@ a.text-dark:focus {
   }
 
   .container-about .jumbotron-text {
+    margin-top: 50px;
     z-index: 1;
-    width: 50%;
+    width: 45%;
     background: none;
     color: black;
   }
@@ -13909,6 +13920,16 @@ a.text-dark:focus {
     right: 0;
   }
 }
+
+/* DESKTOP VERSION */
+
+/* MOVILE FIRST */
+
+.row {
+  margin: 0;
+}
+
+/* TABLET VERSION */
 
 /* DESKTOP VERSION */
 

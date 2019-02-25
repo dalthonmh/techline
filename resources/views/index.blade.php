@@ -133,7 +133,20 @@
     </section>
     {{--  FIN SECCION QUIENES SOMOS  --}}
 
-    
+    {{-- SECTION SERVICIOS --}}
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3>SERVICIO 1</h3>
+            <h2>Transferencia Tecnológica: <br> Programas y Proyectos</h2>
+            <img src="/img/servicios/icono1_2.png" alt="Transferencia tecnológica">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, libero ipsum nihil odit, tempora officiis, ea voluptatum porro nemo maiores nobis. Magnam, facilis quis ipsa qui aliquid aliquam sed?</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="/img/servicios/s1-1.png" alt="servicio1-1">
+            <img src="/img/servicios/s1-2.png" alt="servicio1-2">
+        </div>
+    </div>
+    {{-- FIN SECCION SERVICIOS --}}
 
 </body>
 

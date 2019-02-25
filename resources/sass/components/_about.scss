@@ -1,7 +1,6 @@
 /* MOVILE FIRST */
 
 .container-about{
-    background-color: red;
         .jumbotron-fluid{
             margin: 0;
         }
@@ -29,6 +28,17 @@
                     color: white;
                     border-radius: 12px;
                 }
+                p{
+                    text-align: justify;
+                }
+                h1{
+                    font-weight: bold;
+                }
+                h2{
+                    font-size: 1.2em;
+                    color: black;
+                    font-weight: 600;
+                }
             }
         }
 }
@@ -53,8 +63,9 @@
                 }
             }
             .jumbotron-text{
+                margin-top: 50px;
                 z-index: 1;
-                width: 50%;
+                width: 45%;
                 background: none;
                 color: black;
             }
