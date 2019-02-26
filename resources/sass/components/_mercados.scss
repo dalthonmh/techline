@@ -1,6 +1,7 @@
 /* MOVILE FIRST */
 .jumbotron-mercado{
     .container{
+        margin-bottom: 25px;
         .display-border{
             font-size: 1.4em;
             text-align: center;
@@ -17,13 +18,36 @@
     .row{
         .container-mercados{
             padding: 0;
+            text-align: center;
             .jumbotron{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                font-weight: 500;
+                padding: 35px;
                 .display-4{
+                    font-size: 1.5em;
+                }
+                .lead{
                     font-size: 1em;
                 }
             }
             .mercado-1{
-                background-color: red;
+                background-image: url('/img/mercado/peru.png');
+            }
+            .mercado-2{
+                background-image: url('/img/mercado/china.png');
+            }
+            .mercado-3{
+                background-image: url('/img/mercado/hongkong.png');
+            }
+            .mercado-4{
+                background-image: url('/img/mercado/australia.png');
             }
         }
     }

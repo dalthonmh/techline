@@ -13731,6 +13731,8 @@ a.text-dark:focus {
 .principal .container-navbar .circle-country img {
   border: 1px solid #30A920;
   border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 .principal .carousel-customized {
@@ -13995,6 +13997,10 @@ a.text-dark:focus {
 
 /* MOVILE FIRST */
 
+.jumbotron-mercado .container {
+  margin-bottom: 25px;
+}
+
 .jumbotron-mercado .container .display-border {
   font-size: 1.4em;
   text-align: center;
@@ -14011,14 +14017,44 @@ a.text-dark:focus {
 
 .jumbotron-mercado .row .container-mercados {
   padding: 0;
+  text-align: center;
+}
+
+.jumbotron-mercado .row .container-mercados .jumbotron {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+  padding: 35px;
 }
 
 .jumbotron-mercado .row .container-mercados .jumbotron .display-4 {
+  font-size: 1.5em;
+}
+
+.jumbotron-mercado .row .container-mercados .jumbotron .lead {
   font-size: 1em;
 }
 
 .jumbotron-mercado .row .container-mercados .mercado-1 {
-  background-color: red;
+  background-image: url("/img/mercado/peru.png");
+}
+
+.jumbotron-mercado .row .container-mercados .mercado-2 {
+  background-image: url("/img/mercado/china.png");
+}
+
+.jumbotron-mercado .row .container-mercados .mercado-3 {
+  background-image: url("/img/mercado/hongkong.png");
+}
+
+.jumbotron-mercado .row .container-mercados .mercado-4 {
+  background-image: url("/img/mercado/australia.png");
 }
 
 /* TABLET VERSION */

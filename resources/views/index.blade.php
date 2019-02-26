@@ -89,16 +89,16 @@
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Contáctanos</a>
                                 <div class="dropdown show nav-link-cutsom">
                                     <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Español
+                                            <span class="circle-country"><img src="/img/lang/es.jpg" alt="espana"></span> &nbsp; Español
                                     </a>
                                     
                                     <div class="dropdown-menu mr-auto" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" href="#">
-                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; English</a>
+                                        <span class="circle-country"><img src="/img/lang/en.jpg" alt="espana"></span> &nbsp; English</a>
                                         <a class="dropdown-item" href="#">
-                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Portuguese</a>
+                                        <span class="circle-country"><img src="/img/lang/br.png" alt="espana"></span> &nbsp; Portuguese</a>
                                         <a class="dropdown-item" href="#">
-                                        <span class="circle-country"><img src="http://lorempixel.com/20/20" alt="espana"></span> &nbsp; Francess</a>
+                                        <span class="circle-country"><img src="/img/lang/fr.jpg" alt="espana"></span> &nbsp; Francess</a>
                                     </div>
                                 </div>
                             </div>
