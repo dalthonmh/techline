@@ -250,6 +250,45 @@
 {{-- FIN SECCION MERCADOS OBJETIVOS --}}
 
 
+{{--  INICIO DE PROYECTOS DESTACADOS  --}}
+
+<section class="jumbotron jumbotron-fluid jumbotron-proyectos">
+  <div class="container proyecto_uno">
+    <div class="proyeto_title">
+        <h2>Proyectos destacados</h2>
+        <h3>Proyectos Asociativos Nacionales</h3>
+    </div>
+    <div class="proyecto_head">
+        <div class="proyecto_head_img">
+            <img src="/img/proyectos/profoex.jpg" alt="profoex">
+        </div>
+        <h2>PROFOEX PERÚ</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, distinctio natus?</p>
+        <button class="btn btn-dark">Visitar Web</button>
+    </div>
+    <div class="proyecto_body">
+        <h3>UN ESFUERZO LIDERADO POR :</h3>
+        <div class="proyecto_img_body">
+            <img src="/img/proyectos/techline.png" alt="techline">
+            <img src="/img/proyectos/corfo.jpg" alt="corfo">
+            <img src="/img/proyectos/codesser.jpg" alt="codesser">
+        </div>
+    </div>
+    <div class="proyecto_footer">
+        <h3>EMPRESAS PARTICIPANTES</h3>
+        <div class="proyeto_footer_carousel">
+            
+        </div>
+    </div>
+  </div>
+  <div class="container proyecto_dos">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</section>
+
+{{--  FIN DE PROYECTOS DESTACADOS  --}}
+
 </body>
 
 </html>

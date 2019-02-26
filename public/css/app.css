@@ -13711,7 +13711,7 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .principal {
-  font-family: "Montserrat", "roboto", "nunito", arial, sans-serif;
+  font-family: "roboto", "nunito", arial, sans-serif;
   display: flex;
   flex-direction: column;
   /* header */
@@ -14065,4 +14065,12 @@ a.text-dark:focus {
     margin-bottom: -8px;
   }
 }
+
+/* MOVILE FIRST */
+
+.jumbotron-proyectos {
+  background-color: goldenrod;
+}
+
+/* TABLET VERSION */
 
