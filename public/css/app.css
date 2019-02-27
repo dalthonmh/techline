@@ -3087,7 +3087,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: "roboto", "nunito", arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -3119,7 +3119,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "roboto", "nunito", arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -9194,7 +9194,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "roboto", "nunito", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -9319,7 +9319,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: "roboto", "nunito", arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -14398,16 +14398,108 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .jumbotron-proyectos {
+  font-family: "roboto", "nunito", arial, sans-serif;
   background-color: white;
+  padding: 20px;
 }
 
-.jumbotron-proyectos .proyecto_uno .proyeto_title h2 {
-  font-size: 1em;
+.jumbotron-proyectos .proyecto_uno .proyeto_title .proyecto_title_h2,
+.jumbotron-proyectos .proyecto_dos .proyeto_title .proyecto_title_h2 {
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.008em;
 }
 
-.jumbotron-proyectos .proyecto_uno .proyeto_title h3 {
-  font-size: 0.8em;
+.jumbotron-proyectos .proyecto_uno .proyeto_title .proyecto_title_h3,
+.jumbotron-proyectos .proyecto_dos .proyeto_title .proyecto_title_h3 {
+  font-size: 0.9rem;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyeto_title .proyecto_title_h3::after,
+.jumbotron-proyectos .proyecto_dos .proyeto_title .proyecto_title_h3::after {
+  content: "";
+  display: block;
+  width: 20px;
+  margin-top: 10px;
+  border-bottom: 3px solid #30A920;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head,
+.jumbotron-proyectos .proyecto_dos .proyecto_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head .proyecto_head_img,
+.jumbotron-proyectos .proyecto_dos .proyecto_head .proyecto_head_img {
+  order: 2;
+  width: 50%;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head .proyecto_head_img img,
+.jumbotron-proyectos .proyecto_dos .proyecto_head .proyecto_head_img img {
+  width: 100%;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head .proyecto_head_title,
+.jumbotron-proyectos .proyecto_dos .proyecto_head .proyecto_head_title {
+  order: 1;
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head .proyeto_head_description,
+.jumbotron-proyectos .proyecto_dos .proyecto_head .proyeto_head_description {
+  margin: 15px 0;
+  order: 3;
+  font-size: 0.9rem;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_head .proyeto_head_description p,
+.jumbotron-proyectos .proyecto_dos .proyecto_head .proyeto_head_description p {
+  text-align: justify;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_body,
+.jumbotron-proyectos .proyecto_dos .proyecto_body {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_body .proyecto_body_title,
+.jumbotron-proyectos .proyecto_dos .proyecto_body .proyecto_body_title {
+  margin-bottom: 20px;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_body .proyecto_body_img,
+.jumbotron-proyectos .proyecto_dos .proyecto_body .proyecto_body_img {
+  width: 60%;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_body .proyecto_body_img img,
+.jumbotron-proyectos .proyecto_dos .proyecto_body .proyecto_body_img img {
+  width: 100%;
+  max-height: 170px;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_footer .proyecto_footer_title,
+.jumbotron-proyectos .proyecto_dos .proyecto_footer .proyecto_footer_title {
+  padding: 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.jumbotron-proyectos .proyecto_uno .proyecto_footer .proyeto_footer_carousel .slider,
+.jumbotron-proyectos .proyecto_dos .proyecto_footer .proyeto_footer_carousel .slider {
+  margin: 0 auto;
 }
 
 /* TABLET VERSION */
