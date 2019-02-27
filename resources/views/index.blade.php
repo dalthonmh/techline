@@ -277,7 +277,35 @@
     <div class="proyecto_footer">
         <h3>EMPRESAS PARTICIPANTES</h3>
         <div class="proyeto_footer_carousel">
-            
+            <div class="slider-container slider">
+                <div>
+                  <img src="http://placehold.it/350x300?text=1">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=2">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=3">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=4">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=5">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=6">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=7">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=8">
+                </div>
+                <div>
+                  <img src="http://placehold.it/350x300?text=9">
+                </div>
+              </div>
         </div>
     </div>
   </div>
@@ -288,7 +316,51 @@
 </section>
 
 {{--  FIN DE PROYECTOS DESTACADOS  --}}
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script>
 
+$(document).on('ready', function() {
+    $('.slider-container').slick({
+    dots: false,
+    infinite: true,
+    autoplaySpeed: 2000,
+   
+    autoplay: true,
+
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [
+        {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+        }
+        },
+        {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+        }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+    });
+  });
+
+</script>
 </body>
 
 </html>
