@@ -278,33 +278,37 @@
         <h3>EMPRESAS PARTICIPANTES</h3>
         <div class="proyeto_footer_carousel">
             <div class="slider-container slider">
-                <div>
-                  <img src="http://placehold.it/350x300?text=1">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=2">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=3">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=4">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=5">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=6">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=7">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=8">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=9">
-                </div>
+                <div class="cont-img"><img src="/img/clientes/1.png" alt="image 1"></div>
+                <div class="cont-img"><img src="/img/clientes/2.png" alt="image 2"></div>
+                <div class="cont-img"><img src="/img/clientes/3.gif" alt="image 3"></div>
+                <div class="cont-img"><img src="/img/clientes/4.jpg" alt="image 4"></div>
+                <div class="cont-img"><img src="/img/clientes/5.png" alt="image 5"></div>
+                <div class="cont-img"><img src="/img/clientes/6.png" alt="image 6"></div>
+                <div class="cont-img"><img src="/img/clientes/7.png" alt="image 7"></div>
+                <div class="cont-img"><img src="/img/clientes/8.png" alt="image 8"></div>
+                <div class="cont-img"><img src="/img/clientes/9.jpg" alt="image 9"></div>
+                <div class="cont-img"><img src="/img/clientes/10.png" alt="image 10"></div>
+                <div class="cont-img"><img src="/img/clientes/11.jpg" alt="image 11"></div>
+                <div class="cont-img"><img src="/img/clientes/12.png" alt="image 12"></div>
+                <div class="cont-img"><img src="/img/clientes/13.jpg" alt="image 13"></div>
+                <div class="cont-img"><img src="/img/clientes/14.png" alt="image 14"></div>
+                <div class="cont-img"><img src="/img/clientes/15.png" alt="image 15"></div>
+                <div class="cont-img"><img src="/img/clientes/16.png" alt="image 16"></div>
+                <div class="cont-img"><img src="/img/clientes/17.png" alt="image 17"></div>
+                <div class="cont-img"><img src="/img/clientes/18.png" alt="image 18"></div>
+                <div class="cont-img"><img src="/img/clientes/19.png" alt="image 19"></div>
+                <div class="cont-img"><img src="/img/clientes/20.png" alt="image 20"></div>
+                <div class="cont-img"><img src="/img/clientes/21.png" alt="image 21"></div>
+                <div class="cont-img"><img src="/img/clientes/22.jpg" alt="image 22"></div>
+                <div class="cont-img"><img src="/img/clientes/23.png" alt="image 23"></div>
+                <div class="cont-img"><img src="/img/clientes/24.png" alt="image 24"></div>
+                <div class="cont-img"><img src="/img/clientes/25.png" alt="image 25"></div>
+                <div class="cont-img"><img src="/img/clientes/26.png" alt="image 26"></div>
+                <div class="cont-img"><img src="/img/clientes/27.png" alt="image 27"></div>
+                <div class="cont-img"><img src="/img/clientes/28.jpg" alt="image 28"></div>
+                <div class="cont-img"><img src="/img/clientes/29.jpg" alt="image 29"></div>
+                <div class="cont-img"><img src="/img/clientes/30.png" alt="image 30"></div>
+                <div class="cont-img"><img src="/img/clientes/31.jpg" alt="image 31"></div>
               </div>
         </div>
     </div>
@@ -324,7 +328,7 @@ $(document).on('ready', function() {
     dots: false,
     infinite: true,
     autoplaySpeed: 2000,
-   
+    adaptiveHeight: true,
     autoplay: true,
 
     slidesToShow: 5,
