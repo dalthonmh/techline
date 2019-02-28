@@ -386,11 +386,38 @@
         </div>
     </div>
 </section>
-
 {{--  FIN DE PROYECTOS DESTACADOS  --}}
+
+{{-- GIRAS TECNOLÓGICAS --}}
+<section class="jumbotron jumbotron-fluid jumbotron_girastecnologicas">
+
+    <h1>Carousel Demo</h1>
+    <div id="carousel">
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-1" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-2" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-3" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-4" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-5" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-6" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-7" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-8" /></a>
+      <a href="#"><img src="http://lorempixel.com/320/180" id="item-9" /></a>
+    </div>
+    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+
+    <a href="#" id="reload">Reload</a>
+
+</section>
+{{-- FIN DE GIRAS TECNOLÓGICAS --}}
+
+
+
+
+
+
+
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script>
-
 $(document).on('ready', function() {
     $('#slider-uno, #slider-dos').slick({
     dots: false,
@@ -432,6 +459,38 @@ $(document).on('ready', function() {
     });
   });
 
+</script>
+<script>
+    $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 2, //cantidad de imagenes al costado
+          opacityMultiplier: 1, //cambia la opaciodad
+          //horizonOffset: 100, //las otras imagenes se vienen de arriba de este tamaño
+          autoPlay: 1000,
+          keyboardNav: true, //habilita tecla flecha para mover los slides
+          //horizon: 20, // lo mueve para arriba
+          
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1}"; //string
+          newOptions = eval("(" + datos + ")");
+          carousel.reload(newOptions);
+          return false;
+
+        });
+
+      });
 </script>
 </body>
 
