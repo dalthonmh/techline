@@ -254,27 +254,31 @@
 
 <section class="jumbotron jumbotron-fluid jumbotron-proyectos">
     {{-- proyecto uno --}}
-  <div class="container proyecto_uno">
+  <div class="container proyecto">
     <div class="proyeto_title">
         <h2 class="proyecto_title_h2">Proyectos Destacados</h2>
         <h3 class="proyecto_title_h3">Proyectos Asociativos Nacionales</h3>
     </div>
-    <div class="proyecto_head">
-        <div class="proyecto_head_img">
-            <img src="/img/proyectos/profoex.jpg" alt="profoex">
+    <div class="proyecto_bottom">
+        <div class="proyecto_head">
+            <div class="proyecto_head_img">
+                <img class="img-fluid" src="/img/proyectos/profoex.jpg" alt="profoex">
+            </div>
+            <div class="proyecto_head_bottom">
+                <h2 class="proyecto_head_title">PROFOEX PERÚ</h2>
+                <div class="proyeto_head_description">
+                    <p>Profo financiado por corfo que promueve la expansión y búsqueda de nuevos mercados.</p>
+                    <button class="btn btn-dark">Visitar Web</button>
+                </div>
+            </div>
         </div>
-        <h2 class="proyecto_head_title">PROFOEX PERÚ</h2>
-        <div class="proyeto_head_description">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, distinctio natus?</p>
-            <button class="btn btn-dark">Visitar Web</button>
-        </div>
-    </div>
-    <div class="proyecto_body">
-        <h3 class="proyecto_body_title">UN ESFUERZO LIDERADO POR :</h3>
-        <div class="proyecto_body_img">
-            <img src="/img/proyectos/techline.png" alt="techline">
-            <img src="/img/proyectos/corfo.jpg" alt="corfo">
-            <img src="/img/proyectos/codesser.jpg" alt="codesser">
+        <div class="proyecto_body">
+            <h3 class="proyecto_body_title">UN ESFUERZO LIDERADO POR :</h3>
+            <div class="proyecto_body_img">
+                <img class="img-fluid" src="/img/proyectos/techline.png" alt="techline">
+                <img class="img-fluid" src="/img/proyectos/corfo.jpg" alt="corfo">
+                <img class="img-fluid" src="/img/proyectos/codesser.jpg" alt="codesser">
+            </div>
         </div>
     </div>
     <div class="proyecto_footer">
@@ -319,29 +323,33 @@
   <br>
   <hr>
   {{-- proyecto dos --}}
-  <div class="container proyecto_dos">
-        <div class="proyecto_head">
-            <div class="proyecto_head_img">
-                <img src="/img/proyectos/profoex.jpg" alt="profoex">
+  <div class="container proyecto">
+        <div class="proyecto_bottom">
+            <div class="proyecto_head">
+                <div class="proyecto_head_img">
+                    <img class="img-fluid" src="/img/proyectos/nodo.jpg" alt="nodo">
+                </div>
+                <div class="proyecto_head_bottom">
+                    <h2 class="proyecto_head_title">NODO</h2>
+                    <div class="proyeto_head_description">
+                        <p>Proyecto que promueve la asociación de las pymes regionales del norte de Chile.</p>
+                        <button class="btn btn-dark">Visitar Web</button>
+                    </div>
+                </div>
             </div>
-            <h2 class="proyecto_head_title">PROFOEX PERÚ</h2>
-            <div class="proyeto_head_description">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, distinctio natus?</p>
-                <button class="btn btn-dark">Visitar Web</button>
-            </div>
-        </div>
-        <div class="proyecto_body">
-            <h3 class="proyecto_body_title">UN ESFUERZO LIDERADO POR :</h3>
-            <div class="proyecto_body_img">
-                <img src="/img/proyectos/techline.png" alt="techline">
-                <img src="/img/proyectos/corfo.jpg" alt="corfo">
-                <img src="/img/proyectos/codesser.jpg" alt="codesser">
+            <div class="proyecto_body">
+                <h3 class="proyecto_body_title">UN ESFUERZO LIDERADO POR :</h3>
+                <div class="proyecto_body_img">
+                    <img class="img-fluid" src="/img/proyectos/techline.png" alt="techline">
+                    <img class="img-fluid" src="/img/proyectos/corfo.jpg" alt="corfo">
+                    <img class="img-fluid" src="/img/proyectos/codesser.jpg" alt="codesser">
+                </div>
             </div>
         </div>
         <div class="proyecto_footer">
             <h3 class="proyecto_footer_title">EMPRESAS PARTICIPANTES :</h3>
             <div class="proyeto_footer_carousel">
-                <div id="slider-dos" class="slider">
+                <div id="slider-uno" class="slider">
                     <div class="cont-img"><img src="/img/clientes/1.png" alt="image 1"></div>
                     <div class="cont-img"><img src="/img/clientes/2.png" alt="image 2"></div>
                     <div class="cont-img"><img src="/img/clientes/3.gif" alt="image 3"></div>
