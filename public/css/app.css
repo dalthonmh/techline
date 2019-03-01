@@ -14569,8 +14569,8 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .jumbotron_girastecnologicas #carousel {
-  width: 960px;
-  border: 1px solid #222;
+  width: 100%;
+  border: 1px solid red;
   height: 300px;
   position: relative;
   clear: both;
@@ -14583,6 +14583,7 @@ a.text-dark:focus {
   /* hide images until carousel can handle them */
   cursor: pointer;
   /* otherwise it's not as obvious items can be clicked */
+  width: 200px !important;
 }
 
 /* TABLET VERSION */
