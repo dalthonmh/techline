@@ -391,17 +391,20 @@
 {{-- GIRAS TECNOLÓGICAS --}}
 <section class="jumbotron jumbotron-fluid jumbotron_girastecnologicas">
 
-    <h1>Carousel Demo</h1>
-    <div id="carousel">
-      <a href="#"><img src="/img/giras/1.jpg" id="item-1" /></a>
-      <a href="#"><img src="/img/giras/2.jpg" id="item-2" /></a>
-      <a href="#"><img src="/img/giras/3.jpg" id="item-3" /></a>
-      <a href="#"><img src="/img/giras/4.jpg" id="item-4" /></a>
-      <a href="#"><img src="/img/giras/5.jpg" id="item-5" /></a>
-    </div>
-    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+    <a href="#" class="d-block text-center" id="reload"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+    
+        <div class="carousel-container">
+            <a href="#" class="arrow" id="prev"><i class="fa fa-angle-left"></i></a>
+            <div id="carousel">
+                <a href="#"><img class="img-fluid" src="/img/giras/1.jpg" id="item-1" /></a>
+                <a href="#"><img class="img-fluid" src="/img/giras/2.jpg" id="item-2" /></a>
+                <a href="#"><img class="img-fluid" src="/img/giras/3.jpg" id="item-3" /></a>
+                <a href="#"><img class="img-fluid" src="/img/giras/4.jpg" id="item-4" /></a>
+                <a href="#"><img class="img-fluid" src="/img/giras/5.jpg" id="item-5" /></a>
+            </div>
+            <a href="#" class="arrow" id="next"><i class="fa fa-angle-right"></i></a>
+        </div>
 
-    <a href="#" id="reload">Reload</a>
 
 </section>
 {{-- FIN DE GIRAS TECNOLÓGICAS --}}
@@ -462,7 +465,11 @@ $(document).on('ready', function() {
         autoPlay: 1000,
         keyboardNav: true, //habilita tecla flecha para mover los slides
         //horizon: 20, // lo mueve para arriba
-        separation: 200,
+        //separation: 200,
+        // agregar los breakpoints
+        separation: 100,
+        forcedImageWidth: 150,
+        forcedImageHeight: 100,  
 
         
     });
