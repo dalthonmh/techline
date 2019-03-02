@@ -14568,13 +14568,49 @@ a.text-dark:focus {
 
 /* MOVILE FIRST */
 
-.jumbotron_girastecnologicas .carousel-container {
+.jumbotron_girastecnologicas {
+  font-family: "Montserrat-Regular", arial, sans-serif;
+  background-image: url("/img/giras/portada.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_head {
+  padding: 0 8px;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_head h2 {
+  font-family: "Montserrat-Bold", arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_head h3 {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_head h3::after {
+  content: "";
+  display: block;
+  width: 20px;
+  margin: 10px auto;
+  border-bottom: 3px solid #30A920;
+  margin-bottom: 25px;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_middle #reload {
+  color: #30A920;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.jumbotron_girastecnologicas .carousel-container .arrow {
+.jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container .arrow {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 7px;
   border-radius: 50%;
@@ -14586,7 +14622,7 @@ a.text-dark:focus {
   align-items: center;
 }
 
-.jumbotron_girastecnologicas .carousel-container .arrow i {
+.jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container .arrow i {
   font-weight: bold;
   text-align: center;
   font-size: 20px;
@@ -14595,22 +14631,46 @@ a.text-dark:focus {
   color: white;
 }
 
-.jumbotron_girastecnologicas .carousel-container #carousel {
+.jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container #carousel {
   width: 85%;
   height: 150px;
-  border: 1px solid red;
   position: relative;
   clear: both;
   overflow: hidden;
-  background: #FFF;
+  background: rgba(0, 0, 0, 0);
 }
 
-.jumbotron_girastecnologicas .carousel-container #carousel #carousel img {
+.jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container #carousel #carousel img {
   visibility: hidden;
   /* hide images until carousel can handle them */
   cursor: pointer;
   /* otherwise it's not as obvious items can be clicked */
   width: 200px !important;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer {
+  margin-top: 35px;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer .container {
+  text-align: center;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer .container .jb_gt_g_item {
+  margin: 10px 0;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer .container .jb_gt_g_item .item_icon {
+  font-size: 35px;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer .container .jb_gt_g_item .item_number {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_footer .container .jb_gt_g_item .item_desc {
+  font-size: 0.9rem;
 }
 
 /* TABLET VERSION */

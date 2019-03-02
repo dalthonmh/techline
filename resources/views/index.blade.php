@@ -390,8 +390,12 @@
 
 {{-- GIRAS TECNOLÓGICAS --}}
 <section class="jumbotron jumbotron-fluid jumbotron_girastecnologicas">
-
-    <a href="#" class="d-block text-center" id="reload"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+    <div class="jumbotron_gt_head text-center">
+        <h2>Principales giras tecnológicas, comerciales y empresariales organizadas entre el 2004 y 2018</h2>
+        <h3>Proyectos asociativos internacionales</h3>
+    </div>
+    <div class="jumbotron_gt_middle">
+        <a href="#" class="d-block text-center" id="reload"><i class="fa fa-refresh" aria-hidden="true"></i></a>
     
         <div class="carousel-container">
             <a href="#" class="arrow" id="prev"><i class="fa fa-angle-left"></i></a>
@@ -404,7 +408,36 @@
             </div>
             <a href="#" class="arrow" id="next"><i class="fa fa-angle-right"></i></a>
         </div>
-
+    </div>
+    <div class="jumbotron_gt_footer">
+        <div class="numbers container">
+            <div class="jb_gt_g_item"> {{-- siglas iniciales de cada nivel --}}
+                <div class="item_icon"><i class="fa fa-building"></i></div>
+                <div class="item_number"><span class="value">13</span></div>
+                <div class="item_desc">Años en el mercado</div>
+            </div>
+            <div class="jb_gt_g_item">
+                <div class="item_icon"><i class="fa fa-flag"></i></div>
+                <div class="item_number"><span class="value">27</span></div>
+                <div class="item_desc">Países visitados</div>
+            </div>
+            <div class="jb_gt_g_item">
+                <div class="item_icon"><i class="fa fa-globe"></i></div>
+                <div class="item_number"><span class="value">47</span></div>
+                <div class="item_desc">Giras realizadas</div>
+            </div>
+            <div class="jb_gt_g_item">
+                <div class="item_icon"><i class="fa fa-building"></i></div>
+                <div class="item_number">+<span class="value">300</span></div>
+                <div class="item_desc">Empresas participantes</div>
+            </div>
+            <div class="jb_gt_g_item">
+                <div class="item_icon"><i class="fa fa-handshake-o"></i></div>
+                <div class="item_number">+<span class="value">500</span></div>
+                <div class="item_desc">Empresarios beneficiados</div>
+            </div>
+        </div>
+    </div>
 
 </section>
 {{-- FIN DE GIRAS TECNOLÓGICAS --}}
@@ -418,6 +451,7 @@
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script>
 $(document).on('ready', function() {
+    //proyectos destacados slider
     $('#slider-uno, #slider-dos').slick({
     dots: false,
     infinite: true,
@@ -451,9 +485,6 @@ $(document).on('ready', function() {
             slidesToScroll: 1
         }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
     });
 
@@ -485,12 +516,39 @@ $(document).on('ready', function() {
     });
 
     $('#reload').bind('click', function () {
-        var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1}"; //string
+        var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100}"; //string
         newOptions = eval("(" + datos + ")");
         carousel.reload(newOptions);
         return false;
 
     });
+
+
+        // giras tecnológicas incremento de numeros
+        var section = document.querySelector('.numbers');
+        var hasEntered = false;
+
+        window.addEventListener('scroll', (e) => {
+            var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+
+            if (shouldAnimate && !hasEntered) {
+            hasEntered = true;
+            
+            $('.value').each(function () {
+                $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+                }, {
+                duration: 3500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+                });
+            });
+
+        }
+        });
+
 
   });
 
