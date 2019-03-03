@@ -11,9 +11,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+    {{--  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">  --}}
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -252,8 +252,8 @@
 
 {{--  INICIO DE PROYECTOS DESTACADOS  --}}
 
-<section class="jumbotron jumbotron-fluid jumbotron-proyectos">
-    {{-- proyecto uno --}}
+{{--  <section class="jumbotron jumbotron-fluid jumbotron-proyectos">
+    
   <div class="container proyecto">
     <div class="proyeto_title">
         <h2 class="proyecto_title_h2">Proyectos Destacados</h2>
@@ -322,7 +322,7 @@
   </div>
   <br>
   <hr>
-  {{-- proyecto dos --}}
+  
   <div class="container proyecto">
         <div class="proyecto_bottom">
             <div class="proyecto_head">
@@ -385,13 +385,14 @@
             </div>
         </div>
     </div>
-</section>
+</section>  --}}
+
 {{--  FIN DE PROYECTOS DESTACADOS  --}}
 
 {{-- GIRAS TECNOLÓGICAS --}}
 <section class="jumbotron jumbotron-fluid jumbotron_girastecnologicas">
     <div class="jumbotron_gt_head text-center">
-        <h2>Principales giras tecnológicas, comerciales y empresariales organizadas entre el 2004 y 2018</h2>
+        <h2>Principales giras tecnológicas, comerciales y empresariales <br class="separation">organizadas entre el 2004 y 2018</h2>
         <h3>Proyectos asociativos internacionales</h3>
     </div>
     <div class="jumbotron_gt_middle">
@@ -442,13 +443,62 @@
 </section>
 {{-- FIN DE GIRAS TECNOLÓGICAS --}}
 
+{{--  SECCION BLOG O ULTIMAS PUBLICACIONES O NEWSLETTER  --}}
+<section class="jumbotron jumbotron-fluid jumbotron_blog">
+    <div class="jg_b_head">
+        <h2>Últimas <strong>Publicaciones y Newsletter</strong></h2>
+    </div>
+    <div class="jb_b_body">
+        <div class="jb_b_b_item">
+            <div class="item_tag">
+                <p class="it_t_black">PROYECTOS</p>
+            </div>
+            <div class="item_img">
+                <img class="img-fluid" src="/img/blog/1.jpg" alt="proyectos img">
+            </div>
+            <div class="item_cont">
+                <h3>Conoce nuestras experiencias del 2005 - 2008 realizadas en China</h3>
+                <p>El día 23 de Marzo, en la sede central de la UTEPSA (Universidad Tecnológica Privada de Santa de la Sierra), en Bolivia, se llevó a [...]</p>
+                <button class="btn btn-success">Ver más</button>
+            </div>
+        </div>
+        <div class="jb_b_b_item">
+            <div class="item_tag">
+                <p class="it_t_red">NOTICIAS</p>
+            </div>
+            <div class="item_img">
+                <img class="img-fluid" src="/img/blog/2.jpg" alt="proyectos img">
+            </div>
+            <div class="item_cont">
+                <h3>Conoce nuestras experiencias del 2005 - 2008 realizadas en China</h3>
+                <p>El día 23 de Marzo, en la sede central de la UTEPSA (Universidad Tecnológica Privada de Santa de la Sierra), en Bolivia, se llevó a [...]</p>
+                <button class="btn btn-success">Ver más</button>
+            </div>
+        </div>
+        <div class="jb_b_b_item">
+            <div class="item_tag">
+                <p class="it_t_black">PROYECTOS</p>
+            </div>
+            <div class="item_img">
+                <img class="img-fluid" src="/img/blog/3.jpg" alt="proyectos img">
+            </div>
+            <div class="item_cont">
+                <h3>Conoce nuestras experiencias del 2005 - 2008 realizadas en China</h3>
+                <p>El día 23 de Marzo, en la sede central de la UTEPSA (Universidad Tecnológica Privada de Santa de la Sierra), en Bolivia, se llevó a [...]</p>
+                <button class="btn btn-success">Ver más</button>
+            </div>
+        </div>
+    </div>
+    <div class="jb_b_footer">
+        <button class="btn btn-success">MÁS PUBLICACIONES</button>
+    </div>
+</section>
 
 
 
 
 
-
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="/js/jquery.min.js" type="text/javascript"></script> {{--  poner antiguo script  --}}
 <script>
 $(document).on('ready', function() {
     //proyectos destacados slider
@@ -524,14 +574,59 @@ $(document).on('ready', function() {
     });
 
 
-        // giras tecnológicas incremento de numeros
-        var section = document.querySelector('.numbers');
-        var hasEntered = false;
+        var isBreakPoint = function (bp) {
+            var bps = [320, 576, 768, 992],
+                w = $(window).width(),
+                min, max
+                for (var i = 0, l = bps.length; i < l; i++) {
+                if (bps[i] === bp) {
+                    min = bps[i-1] || 0
+                    max = bps[i]
+                    break
+                }
+            }
+            return w > min && w <= max
+        }
 
-        window.addEventListener('scroll', (e) => {
-            var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+        
+        // Usage
+        if (isBreakPoint(320)) {
+            console.log('320px');
+            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 150,forcedImageHeight: 100}"; //string
+            newOptions = eval("(" + datos + ")");
+            carousel.reload(newOptions);
+            
+        }
+        if(isBreakPoint(576)){
+            console.log('480px');
+            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 170,forcedImageHeight: 120}"; //string
+            newOptions = eval("(" + datos + ")");
+            carousel.reload(newOptions);
+        }
+        if(isBreakPoint(768)){
+            console.log('768px');
+            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 200,forcedImageHeight: 150}"; //string
+            newOptions = eval("(" + datos + ")");
+            carousel.reload(newOptions);
+        }
+        if(isBreakPoint(992)){
+            console.log('992px');
+            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 250,forcedImageHeight: 200}"; //string
+            newOptions = eval("(" + datos + ")");
+            carousel.reload(newOptions);
+        }
 
-            if (shouldAnimate && !hasEntered) {
+
+
+
+    // giras tecnológicas incremento de numeros
+    var section = document.querySelector('.numbers');
+    var hasEntered = false;
+
+    window.addEventListener('scroll', (e) => {
+        var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+
+        if (shouldAnimate && !hasEntered) {
             hasEntered = true;
             
             $('.value').each(function () {
@@ -547,7 +642,7 @@ $(document).on('ready', function() {
             });
 
         }
-        });
+    });
 
 
   });

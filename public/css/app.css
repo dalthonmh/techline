@@ -4,30 +4,30 @@
 
 /* monserrat regular */
 
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.googleapis.com/css?family=Montserrat);
-}
+/* @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.googleapis.com/css?family=Montserrat);
+} */
 
 /* monserrat bold */
 
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.googleapis.com/css?family=Montserrat:700);
-}
+/* @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.googleapis.com/css?family=Montserrat:700);
+} */
 
 /* monserrat black */
 
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 900;
-  src: local("Montserrat Black"), local("Montserrat-Black"), url(https://fonts.googleapis.com/css?family=Montserrat:900);
-}
+/* @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.googleapis.com/css?family=Montserrat:900);
+} */
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -3081,6 +3081,10 @@
   overflow: visible;
   clip: auto;
 }
+
+/* $font-family-sans-serif-regular: 'Montserrat-Regular', arial, sans-serif;
+$font-family-sans-serif-bold: 'Montserrat-Bold', arial, sans-serif;
+$font-family-sans-serif-black: 'Montserrat-Black', arial, sans-serif; */
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -13737,6 +13741,12 @@ a.text-dark:focus {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Slider */
 
 .slick-slider {
@@ -14018,7 +14028,7 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .principal {
-  font-family: "Montserrat-Regular", arial, sans-serif;
+  font-family: arial, sans-serif;
   display: flex;
   flex-direction: column;
   /* header */
@@ -14054,7 +14064,7 @@ a.text-dark:focus {
 }
 
 .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-  font-family: "Montserrat-Black", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -14306,7 +14316,7 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .jumbotron-mercado .container {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .jumbotron-mercado .container .display-border {
@@ -14318,7 +14328,7 @@ a.text-dark:focus {
 .jumbotron-mercado .container .display-border::after {
   content: "";
   display: block;
-  margin: auto;
+  margin: 8px auto;
   width: 20px;
   border-bottom: 3px solid #30A920;
 }
@@ -14368,6 +14378,10 @@ a.text-dark:focus {
 /* TABLET VERSION */
 
 @media (min-width: 768px) {
+  .jumbotron-mercado .container {
+    margin-bottom: 50px;
+  }
+
   .jumbotron-mercado .container .display-border::after {
     padding-bottom: 5px;
     margin-bottom: -8px;
@@ -14569,21 +14583,25 @@ a.text-dark:focus {
 /* MOVILE FIRST */
 
 .jumbotron_girastecnologicas {
-  font-family: "Montserrat-Regular", arial, sans-serif;
+  font-family: arial, sans-serif;
   background-image: url("/img/giras/portada.jpg");
   background-size: cover;
   color: white;
 }
 
 .jumbotron_girastecnologicas .jumbotron_gt_head {
-  padding: 0 8px;
+  padding: 12px;
 }
 
 .jumbotron_girastecnologicas .jumbotron_gt_head h2 {
-  font-family: "Montserrat-Bold", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
+}
+
+.jumbotron_girastecnologicas .jumbotron_gt_head h2 .separation {
+  display: none;
 }
 
 .jumbotron_girastecnologicas .jumbotron_gt_head h3 {
@@ -14673,5 +14691,141 @@ a.text-dark:focus {
   font-size: 0.9rem;
 }
 
+/* SMALL DEVICES */
+
+@media (min-width: 576px) {
+  .jumbotron_girastecnologicas .jumbotron_gt_head {
+    padding: 0 35px;
+  }
+
+  .jumbotron_girastecnologicas .jumbotron_gt_head h2 .separation {
+    display: inline-block;
+  }
+}
+
 /* TABLET VERSION */
+
+@media (min-width: 768px) {
+  .jumbotron_girastecnologicas .jumbotron_gt_head {
+    padding: 0 40px;
+  }
+
+  .jumbotron_girastecnologicas .jumbotron_gt_head h2 {
+    font-size: 1.5rem;
+  }
+
+  .jumbotron_girastecnologicas .jumbotron_gt_head h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/*DESKTOP VERSION*/
+
+/* MOVILE FIRST */
+
+.jumbotron_blog {
+  background-color: white;
+}
+
+.jumbotron_blog .jg_b_head {
+  margin-bottom: 25px;
+}
+
+.jumbotron_blog .jg_b_head h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  height: 20px;
+}
+
+.jumbotron_blog .jg_b_head h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 20px;
+  border-bottom: 3px solid #30A920;
+}
+
+.jumbotron_blog .jb_b_body {
+  margin: 38px 0 10px 0;
+  padding: 0 35px;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item {
+  margin: 30px auto;
+  position: relative;
+  width: 300px;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_tag p {
+  color: white;
+  position: absolute;
+  top: 15px;
+  padding: 5px 18px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_tag .it_t_black {
+  background-color: #1e1e1e;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_tag .it_t_red {
+  background-color: red;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_img img {
+  height: 300px;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_cont {
+  padding: 30px;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_cont h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_cont p {
+  text-align: justify;
+  margin: 15px 0 25px 0;
+  font-size: 0.9rem;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item .item_cont button {
+  border-radius: 0;
+  background-color: #30A920;
+  font-weight: bold;
+  padding: 5px 35px;
+}
+
+.jumbotron_blog .jb_b_body .jb_b_b_item:hover {
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron_blog .jb_b_footer {
+  text-align: center;
+}
+
+.jumbotron_blog .jb_b_footer button {
+  border-radius: 0;
+  background-color: #30A920;
+  font-weight: bold;
+  padding: 5px 35px;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+  .jumbotron_blog .jg_b_head h2 {
+    font-size: 1.5rem;
+    height: 20px;
+  }
+
+  .jumbotron_blog .jb_b_body {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 100px;
+  }
+}
 

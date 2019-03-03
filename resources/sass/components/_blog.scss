@@ -1,0 +1,99 @@
+/* MOVILE FIRST */
+.jumbotron_blog{
+    background-color: white;
+    .jg_b_head{
+        margin-bottom: 25px;
+        h2{
+            font-size: $font-size-subtitle; //1.1 rem
+            text-align: center;
+            height: 20px;
+        }
+        h2::after{
+            content: '';
+            display: block;
+            margin: 10px auto;
+            width: 20px;
+            border-bottom: 3px solid $grencustom;
+        }
+    }
+    .jb_b_body{
+        margin: 38px 0 10px 0;
+        padding: 0 35px;
+        .jb_b_b_item{
+            margin: 30px auto;
+            position: relative;
+            width: 300px;
+            .item_tag{
+                p{
+                    color: white;
+                    position: absolute;
+                    top: 15px;
+                    padding: 5px 18px;
+                    font-weight: bold;
+                    font-size: $font-size-base;
+                }
+                .it_t_black{
+                    background-color: #1e1e1e;
+                }
+                .it_t_red{
+                    background-color: red;
+                }
+
+            }
+            .item_img{
+                img{
+                    height: 300px;
+                }
+            }
+            .item_cont{
+                padding: 30px;
+                h3{
+                    font-weight: bold;
+                    font-size: $font-size-subtitle;
+                }
+                p{
+                    text-align: justify;
+                    margin: 15px 0 25px 0;
+                    font-size: $font-size-base;
+                }
+                button{
+                    border-radius: 0;
+                    background-color: $grencustom;
+                    font-weight: bold;
+                    padding: 5px 35px;
+                }
+            }
+        }
+        .jb_b_b_item:hover{
+            box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .jb_b_footer{
+        text-align: center;
+        button{
+            border-radius: 0;
+            background-color: $grencustom;
+            font-weight: bold;
+            padding: 5px 35px;
+        }
+    }
+}
+
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+    .jumbotron_blog{
+        .jg_b_head{
+            h2{
+                font-size: $font-size-title; //1.5 rem
+                height: 20px;
+            }
+        }
+        .jb_b_body{
+            display: flex;
+            justify-content: space-around;
+            //margin: 40px 0 60px 0;
+            padding: 0 100px;
+        }
+    }
+}

@@ -9,6 +9,12 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 // Slick carusel
 @import '~slick-carousel/slick/slick';
 @import '~slick-carousel/slick/slick-theme';
@@ -30,3 +36,6 @@
 
 // section giras tecnológicas
 @import 'components/girastecnologicas';
+
+//seccion blog, ultimas publicaciones o newsletter
+@import 'components/blog';

@@ -1,7 +1,7 @@
 /* MOVILE FIRST */
 .jumbotron-mercado{
     .container{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         .display-border{
             font-size: 1.4em;
             text-align: center;
@@ -10,7 +10,7 @@
         .display-border::after{
             content: '';
             display: block;
-            margin: auto;
+            margin: 8px auto;
             width: 20px;
             border-bottom: 3px solid $grencustom;
         }
@@ -57,6 +57,7 @@
 @media (min-width: 768px) {
     .jumbotron-mercado{
         .container{
+            margin-bottom: 50px;
             .display-border::after{
                 padding-bottom: 5px;
                 margin-bottom: -8px;

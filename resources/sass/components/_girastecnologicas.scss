@@ -6,12 +6,16 @@
     color: white;
     //jumbotron head
     .jumbotron_gt_head{
-        padding: 0 8px;
+        padding: 12px;
+
         h2{
             font-family: $font-family-sans-serif-bold;
             font-size: $font-size-subtitle; //1.1rem
             font-weight: bold;
             text-align: center;
+            .separation{
+                display: none;
+            }
         }
         h3{
             font-size: $font-size-base; //.9rem
@@ -91,7 +95,41 @@
     }
 }
 
+/* SMALL DEVICES */
+@media (min-width: 576px) {
+    .jumbotron_girastecnologicas{
+        .jumbotron_gt_head{
+            padding: 0 35px;
+            h2{
+                .separation{
+                    display: inline-block;
+                }
+            
+            }
+        }
+    }
+}
+
 /* TABLET VERSION */
 @media (min-width: 768px) {
-    
+    .jumbotron_girastecnologicas{
+        .jumbotron_gt_head{
+            padding: 0 40px;
+            h2{
+                font-size: $font-size-title;
+            }
+            h3{
+                font-size: $font-size-subtitle;
+            }
+        }
+    }
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 992px) {
+    .jumbotron_girastecnologicas{
+        .jumbotron_gt_head{
+            
+        }
+    }
 }
