@@ -1,0 +1,38 @@
+/* MOVILE FIRST */
+.jumbotron_socios{
+    background-color: white;
+    .jb_s_head{
+        margin-bottom: 25px;
+        h2{
+            font-size: $font-size-subtitle; //1.1 rem
+            text-align: center;
+            height: 20px;
+        }
+        h2::after{
+            content: '';
+            display: block;
+            margin: 10px auto;
+            width: 20px;
+            border-bottom: 3px solid $grencustom;
+        }
+    }
+    .jb_s_body{
+        
+    }
+
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) {
+    .jumbotron_socios{
+        .jb_s_head{
+            h2{
+                font-size: $font-size-title; //1.5 rem
+                height: 20px;
+            }
+        }
+        .jb_s_body{
+            
+        }
+    }
+}

@@ -14829,3 +14829,36 @@ a.text-dark:focus {
   }
 }
 
+/* MOVILE FIRST */
+
+.jumbotron_socios {
+  background-color: white;
+}
+
+.jumbotron_socios .jb_s_head {
+  margin-bottom: 25px;
+}
+
+.jumbotron_socios .jb_s_head h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  height: 20px;
+}
+
+.jumbotron_socios .jb_s_head h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 20px;
+  border-bottom: 3px solid #30A920;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+  .jumbotron_socios .jb_s_head h2 {
+    font-size: 1.5rem;
+    height: 20px;
+  }
+}
+

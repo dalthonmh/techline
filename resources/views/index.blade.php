@@ -493,9 +493,29 @@
         <button class="btn btn-success">MÁS PUBLICACIONES</button>
     </div>
 </section>
+{{--  fin seccion BLOG  --}}
 
-
-
+{{--  SECCION SOCIOS ESTRATEGICOS  --}}
+<section class="jumbotron jumbotron-fluid jumbotron_socios">
+    <div class="jb_s_head">
+        <h2>Nuestros <strong>Socios Estratégicos</strong></h2>
+    </div>
+    <div class="jb_s_body">
+        <div class="jb_s_b_top">
+            <div class="t_item_img"><img src="/img/socios/1.png" alt=""></div>
+            <div class="t_item_img"><img src="/img/socios/2.jpg" alt=""></div>
+            <div class="t_item_img"><img src="/img/socios/3.png" alt=""></div>
+        </div>
+        <div class="jb_s_b_bottom">
+            <div class="b_item_img"><img src="/img/socios/4.png" alt=""></div>
+            <div class="b_item_img"><img src="/img/socios/5.png" alt=""></div>
+            <div class="b_item_img"><img src="/img/socios/6.png" alt=""></div>
+            <div class="b_item_img"><img src="/img/socios/7.png" alt=""></div>
+            <div class="b_item_img"><img src="/img/socios/8.gif" alt=""></div>
+        </div>
+    </div>
+</section>
+{{--  fin seccion socios estrategicos  --}}
 
 
 <script src="/js/jquery.min.js" type="text/javascript"></script> {{--  poner antiguo script  --}}
