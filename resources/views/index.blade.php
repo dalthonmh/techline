@@ -585,6 +585,49 @@
 </section>
 {{-- fin seccion reunion trabajo --}}
 
+{{-- footer de la pagina --}}
+<footer class="jumbotron jumbotron-fluid jumbotron_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 item logo">
+                <div class="item_img">
+                    <img src="/img/logo-techline.png" alt="Logo techline" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-2 item empresa">
+                <h3><strong>La Empresa</strong></h3>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Quienes Somos</li>
+                    <li>Portafolio</li>
+                    <li>Giras</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 item servicios">
+                <h3><strong>Servicios</strong></h3>
+                <ul>
+                    <li>Proyectos y/o Programas de Transferencia Tecnológica</li>
+                    <li>Desarrollo de Mercados Internacionales</li>
+                    <li>Importaciones de commodities industriales</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 redes">
+                <h3><strong>Síguenos</strong></h3>
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-youtube"></i></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="description">
+            <p>2019 &copy; TechLine - Openning Business Opportunities. Todos los Derechos Reservados.</p><cite class="pull-right">Desarrollado por <a href="#">Noveltie</a></cite>
+        </div>
+    </div>
+
+</footer>
+
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script>

@@ -1,7 +1,99 @@
 /* MOVILE FIRST */
+.jumbotron_footer{
+    background-color: #303030;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    .container{
+        .row{
+            .redes{
+                ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 20px 60px 20px 0;
+                   
+                    li{
+                        list-style: none;
+                        background-color: rgba($color: white, $alpha: .1);
+                        font-size: 20px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        margin-right: 20px;
+                    }
+                    li:hover{
+                        background-color: rgba($color: black, $alpha: .7);
+                    }
+                }
+            }
+            .item{
+                h3{
+                    font-size: $font-size-subtitle;   
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        font-size: $font-size-base;
+                    }
+                    li:before {
+                        content: "\2022";
+                        color: $grencustom;
+                        font-weight: bold;
+                        display: inline-block; 
+                        width: 1em;
+                        //margin-left: -1em;
+                    }
+                }
+            }
+        }
+        hr{
+            border-top: 1px solid rgba($color: #fff, $alpha: .3)
+        }
+    }
+}
 
-
-/* TABLET VERSION */
+/*TABLET VERSION*/
 @media (min-width: 768px) {
-    
+    .jumbotron_footer{
+        padding: 4rem 2rem 1rem 2rem;
+        .container{
+            .row{
+                .redes{
+                    ul{
+                        justify-content: space-around;
+                        padding: 0;
+                    }
+                }
+            }
+            hr{
+                margin-top: 2rem;
+            }
+            .description{
+                margin-top: 1.5rem;
+                p{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .jumbotron_footer{
+        .container{
+            .row{
+                .redes{
+                    ul{
+                        justify-content: space-around;
+                        padding: 20px 60px 20px 0;
+                    }
+                }
+            }
+        }
+    }
 }

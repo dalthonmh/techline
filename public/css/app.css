@@ -14975,6 +14975,7 @@ body {
   background-image: url("/img/fondo_contacto.jpg");
   background-size: cover;
   color: white;
+  margin-bottom: 0;
 }
 
 .jumbotron-trabajo .container .jb_header {
@@ -15045,6 +15046,98 @@ body {
 
   .jumbotron-trabajo .container .jb_bottom .jb_footer .form-group .pt-3 {
     padding-top: 0 !important;
+  }
+}
+
+/* MOVILE FIRST */
+
+.jumbotron_footer {
+  background-color: #303030;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+}
+
+.jumbotron_footer .container .row .redes ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 60px 20px 0;
+}
+
+.jumbotron_footer .container .row .redes ul li {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.jumbotron_footer .container .row .redes ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron_footer .container .row .item h3 {
+  font-size: 1.1rem;
+}
+
+.jumbotron_footer .container .row .item ul {
+  list-style: none;
+}
+
+.jumbotron_footer .container .row .item ul li {
+  font-size: 0.9rem;
+}
+
+.jumbotron_footer .container .row .item ul li:before {
+  content: "\2022";
+  color: #30A920;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.jumbotron_footer .container hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*TABLET VERSION*/
+
+@media (min-width: 768px) {
+  .jumbotron_footer {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+
+  .jumbotron_footer .container .row .redes ul {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .jumbotron_footer .container hr {
+    margin-top: 2rem;
+  }
+
+  .jumbotron_footer .container .description {
+    margin-top: 1.5rem;
+  }
+
+  .jumbotron_footer .container .description p {
+    display: inline-block;
+  }
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  .jumbotron_footer .container .row .redes ul {
+    justify-content: space-around;
+    padding: 20px 60px 20px 0;
   }
 }
 
