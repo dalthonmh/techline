@@ -14835,10 +14835,6 @@ a.text-dark:focus {
   background-color: white;
 }
 
-.jumbotron_socios .jb_s_head {
-  margin-bottom: 25px;
-}
-
 .jumbotron_socios .jb_s_head h2 {
   font-size: 1.1rem;
   text-align: center;
@@ -14853,12 +14849,119 @@ a.text-dark:focus {
   border-bottom: 3px solid #30A920;
 }
 
+.jumbotron_socios .jb_s_body {
+  padding: 0 15px;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 30px 0;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_top .t_item_img {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_top .t_item_img img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 220px;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_top .t_item_img img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_bottom .b_item_img {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_bottom .b_item_img img {
+  width: 220px;
+  max-height: 90px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.jumbotron_socios .jb_s_body .jb_s_b_bottom .b_item_img img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 /* TABLET VERSION */
 
 @media (min-width: 768px) {
+  .jumbotron_socios .jb_s_head {
+    margin-bottom: 25px;
+  }
+
   .jumbotron_socios .jb_s_head h2 {
     font-size: 1.5rem;
     height: 20px;
+  }
+
+  .jumbotron_socios .jb_s_body {
+    padding: 0 100px;
+  }
+
+  .jumbotron_socios .jb_s_body .jb_s_b_top {
+    margin: 90px 0 70px 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .jumbotron_socios .jb_s_body .jb_s_b_top .t_item_img {
+    width: 290px;
+  }
+
+  .jumbotron_socios .jb_s_body .jb_s_b_bottom {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .jumbotron_socios .jb_s_body .jb_s_b_bottom .b_item_img img {
+    width: 180px;
+    max-height: 90px;
+  }
+}
+
+/* MOVILE FIRST */
+
+.jumbotron_oficinas {
+  background-image: url("/img/mapa_2.jpg");
+  background-size: cover;
+  position: relative;
+  margin-top: 100px;
+  height: 605px;
+  text-align: center;
+}
+
+.jumbotron_oficinas .card {
+  background-color: #30A920;
+  position: absolute;
+  border-radius: 0 0 15px 0;
+  left: 0;
+  top: -130px;
+  color: black;
+  text-align: right;
+}
+
+/* TABLET VERSION */
+
+@media (min-width: 768px) {
+  .jumbotron_oficinas {
+    margin-top: 130px;
   }
 }
 

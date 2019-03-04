@@ -252,7 +252,7 @@
 
 {{--  INICIO DE PROYECTOS DESTACADOS  --}}
 
-{{--  <section class="jumbotron jumbotron-fluid jumbotron-proyectos">
+<section class="jumbotron jumbotron-fluid jumbotron-proyectos">
     
   <div class="container proyecto">
     <div class="proyeto_title">
@@ -385,7 +385,7 @@
             </div>
         </div>
     </div>
-</section>  --}}
+</section>
 
 {{--  FIN DE PROYECTOS DESTACADOS  --}}
 
@@ -518,7 +518,76 @@
 {{--  fin seccion socios estrategicos  --}}
 
 
-<script src="/js/jquery.min.js" type="text/javascript"></script> {{--  poner antiguo script  --}}
+{{-- seccion nuestras oficinas --}}
+<section class="jumbotron jumbotron-fluid jumbotron_oficinas">
+    <div class="row mr-0">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-9  ml-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuestas oficinas</h5>
+                            <p class="card-text">Estamos ubicados en puntos estratégicos de Asia - Pacífico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{-- fin seccion nuestras oficinas --}}
+
+{{-- seccion reunion trabajo --}}
+<section class="jumbotron jumbotron-fluid jumbotron-trabajo">
+    <div class="container">
+        <div class="jb_header">
+            <h2>Reunión de trabajo</h2>
+            <p class="text-justify">Tienes una pregunta o necesitas una cita?. Siempre estamos felices de ayudar. Simplemente complete nuestro formulario rápido a continuación y nos comunicaremos con usted lo antes posible</p>
+        </div>
+        <div class="row text-left">
+            <div class="col-12 col-md-5 text-left">
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="input_name">Nombres y apellidos</label>
+                            <input type="text" class="form-control" id="input_name" placeholder="Ingrese sus datos">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="input_celular">Celular</label>
+                            <input type="text" class="form-control" id="input_celular" placeholder="Algún numero de contacto">
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <label for="input_correo">Email</label>
+                        <input type="email" class="form-control" id="input_correo" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form_item">
+                        <label for="input_correo">Asunto</label>
+                        <input type="text" class="form-control" id="input_correo" placeholder="¿Cúal es el motivo del mensage?">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{-- fin seccion reunion trabajo --}}
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script>
 $(document).on('ready', function() {
     //proyectos destacados slider
@@ -594,47 +663,8 @@ $(document).on('ready', function() {
     });
 
 
-        var isBreakPoint = function (bp) {
-            var bps = [320, 576, 768, 992],
-                w = $(window).width(),
-                min, max
-                for (var i = 0, l = bps.length; i < l; i++) {
-                if (bps[i] === bp) {
-                    min = bps[i-1] || 0
-                    max = bps[i]
-                    break
-                }
-            }
-            return w > min && w <= max
-        }
-
+    
         
-        // Usage
-        if (isBreakPoint(320)) {
-            console.log('320px');
-            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 150,forcedImageHeight: 100}"; //string
-            newOptions = eval("(" + datos + ")");
-            carousel.reload(newOptions);
-            
-        }
-        if(isBreakPoint(576)){
-            console.log('480px');
-            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 170,forcedImageHeight: 120}"; //string
-            newOptions = eval("(" + datos + ")");
-            carousel.reload(newOptions);
-        }
-        if(isBreakPoint(768)){
-            console.log('768px');
-            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 200,forcedImageHeight: 150}"; //string
-            newOptions = eval("(" + datos + ")");
-            carousel.reload(newOptions);
-        }
-        if(isBreakPoint(992)){
-            console.log('992px');
-            var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100,forcedImageWidth: 250,forcedImageHeight: 200}"; //string
-            newOptions = eval("(" + datos + ")");
-            carousel.reload(newOptions);
-        }
 
 
 

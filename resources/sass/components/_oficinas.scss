@@ -1,7 +1,25 @@
 /* MOVILE FIRST */
 
-
+.jumbotron_oficinas{
+    background-image: url('/img/mapa_2.jpg');
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+    height: 605px;
+    text-align: center;
+    .card{
+        background-color: $grencustom;
+        position: absolute;
+        border-radius: 0 0 15px 0;
+        left: 0;
+        top: -130px;
+        color: black;
+        text-align: right;
+    }
+}
 /* TABLET VERSION */
 @media (min-width: 768px) {
-    
+    .jumbotron_oficinas{
+        margin-top: 130px;
+    }
 }
