@@ -541,45 +541,44 @@
 <section class="jumbotron jumbotron-fluid jumbotron-trabajo">
     <div class="container">
         <div class="jb_header">
-            <h2>Reunión de trabajo</h2>
-            <p class="text-justify">Tienes una pregunta o necesitas una cita?. Siempre estamos felices de ayudar. Simplemente complete nuestro formulario rápido a continuación y nos comunicaremos con usted lo antes posible</p>
+            <h2><strong>Reunión de trabajo</strong></h2>
+            <p class="text-justify mt-5">Tienes una pregunta o necesitas una cita?. Siempre estamos felices de ayudar. Simplemente complete nuestro formulario rápido a continuación y nos comunicaremos con usted lo antes posible</p>
         </div>
-        <div class="row text-left">
-            <div class="col-12 col-md-5 text-left">
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
-                <div class="item"><i class="fa fa-message"></i><p>sstechline@gmail.com</p></div>
+        <div class="row text-left jb_bottom">
+            <div class="col-12 col-md-5 text-left jb_body">
+                <div class="item py-2"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<p class="d-inline">sstechline@gmail.com</p></div>
+                <div class="item py-2"><i class="fa fa-phone"></i>&nbsp;&nbsp;<p class="d-inline"><strong>+56 552608153</strong></p></div>
+                <div class="item py-2"><i class="fa fa-mobile"></i>&nbsp;&nbsp;<p class="d-inline"><strong>+56 984 280 493</strong></p></div>
+                <div class="item py-2"><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;<p class="d-inline"><strong>+56 984 280 493</strong></p></div>
+                <div class="item py-2"><i class="fa fa-skype"></i>&nbsp;&nbsp;<p class="d-inline">skype: <strong>+56 984 280 493</strong></p></div>
+                <div class="item py-2"><i class="fa fa-weixin"></i>&nbsp;&nbsp;<p class="d-inline">wechat: <strong>+56 984 280 493</strong></p></div>
+                <div class="item py-2"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<p class="d-inline">Leonora Latorre <br>Antofagasta - Chile</p></div>
+                <div class="item py-2"><i class="fa fa-calendar"></i>&nbsp;&nbsp;<p class="d-inline">Horario de atención: <br>Lunes a Viernes</p></div>
             </div>
-            <div class="col-12 col-md-5">
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <label for="input_name">Nombres y apellidos</label>
+            <div class="col-12 col-md-5 jb_footer">
+                    <div class="row form-group">
+                        <div class="col-12 col-md-6 pt-3 px-0 border-top border-light">
+                            <label for="input_name">Nombres y Apellidos</label>
                             <input type="text" class="form-control" id="input_name" placeholder="Ingrese sus datos">
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 px-0">
                             <label for="input_celular">Celular</label>
                             <input type="text" class="form-control" id="input_celular" placeholder="Algún numero de contacto">
                         </div>
                     </div>
-                    <div class="form_item">
+                    <div class="form-group">
                         <label for="input_correo">Email</label>
                         <input type="email" class="form-control" id="input_correo" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
                     </div>
-                    <div class="form_item">
+                    <div class="form-group">
                         <label for="input_correo">Asunto</label>
                         <input type="text" class="form-control" id="input_correo" placeholder="¿Cúal es el motivo del mensage?">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describa el mensaje" rows="3"></textarea>
                     </div>
-                </div>
+                    <button class="btn btn-success pull-right">Enviar Mensage</button>
             </div>
         </div>
     </div>

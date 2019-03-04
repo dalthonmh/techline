@@ -1,0 +1,80 @@
+/* MOVILE FIRST */
+
+.jumbotron-trabajo{
+    background-image: url('/img/fondo_contacto.jpg');
+    background-size: cover;
+    color: white;
+    .container{
+        .jb_header{
+            padding: 15px;
+            h2{
+                font-size: $font-size-subtitle; //1.1 rem
+                height: 20px;
+            }
+            h2::after{
+                content: '';
+                display: block;
+                margin: 10px 0;
+                width: 20px;
+                border-bottom: 3px solid $grencustom;
+            }
+        }
+        .jb_bottom{
+            .jb_body{
+                margin-bottom: 20px;
+            }
+            .jb_footer{
+                .form-group{
+                    .form-control{
+                        border-radius: 0;
+                        background-color: rgba(#fff, .1);
+                        border: none;
+                    }
+                    label{
+                        font-size: $font-size-small; //.75rem
+                    }
+                    .border{
+                        border: none;
+                    }
+                }
+                .btn-success{
+                    border-radius: 0;
+                    background-color: $grencustom;
+                    padding: 5px 35px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+/* TABLET VERSION */
+@media (min-width: 768px) {
+    .jumbotron-trabajo{
+        .container{
+            .jb_header{
+                padding: 15px;
+                h2{
+                    font-size: $font-size-title; //1.5 rem
+                }
+            }
+            .jb_bottom{
+                .jb_footer{
+                    .form-group{
+                        .px-0:nth-child(1){
+                            padding-right: 7px !important;
+                        }
+                        .px-0:nth-child(2){
+                            padding-left: 7px !important;
+                        }
+                        .border-top,.border-light{
+                            border: none !important;
+                        }
+                        .pt-3{
+                            padding-top: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

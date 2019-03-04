@@ -15,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: $font-family-sans-serif-regular;
+}
 // Slick carusel
 @import '~slick-carousel/slick/slick';
 @import '~slick-carousel/slick/slick-theme';
@@ -45,3 +48,6 @@
 
 //seccion oficinas
 @import 'components/oficinas';
+
+//seccion reunion de trabajo (formulario)
+@import 'components/reuniontrabajo';
