@@ -24,6 +24,9 @@
 </head>
 
 <body>
+    <div class="sb-container">
+
+    
     <section class="principal">
 
         {{-- carusel --}}
@@ -32,21 +35,21 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/img/fondo_portada1.jpg" alt="First slide">
+                        <img class="d-block" src="/img/fondo_portada1.jpg" alt="First slide">
                         <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
                             <h5 class=""><span class="green-color-text">Epicentro minero</span><br> industrial energético y <br> logístico de Chile y <br> Sudamérica</h5>
                             <p>Conéctate con la región Antofagasta y aprovecha tus recursos.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/fondo_portada2.jpg" alt="Second slide">
+                        <img class="d-block" src="/img/fondo_portada2.jpg" alt="Second slide">
                         <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
                             <h5 class="">Estamos <br>localizados en el <br> <span class="green-color-text">"Golden Triangle"</span><br>de Sudamérica</h5>
                             <p>Zona estratégica del desarrollo comercial de América del Sur.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/fondo_portada3.jpg" alt="Third slide">
+                        <img class="d-block" src="/img/fondo_portada3.jpg" alt="Third slide">
                         <div class="carousel-caption carousel-caption-custom d-md-block align-middle">
                             <h5 class="">Gran cantidad de<br>minas en todo el sur <br> de Sudamérica <br> <span class="green-color-text">Mejor calidad de vida</span></h5>
                             <p>Mejor ubicación para la mineria industrial costera.</p>
@@ -87,7 +90,7 @@
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Blog</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">RSE</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Contáctanos</a>
-                                <div class="dropdown show nav-link-cutsom">
+                                <div class="dropdown show nav-link-cutsom dropdown-target">
                                     <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="circle-country"><img src="/img/lang/es.jpg" alt="espana"></span> &nbsp; Español
                                     </a>
@@ -108,6 +111,9 @@
             </div>
         </div>
         {{-- fin navbar --}}
+
+        {{--  navbar 2  --}}
+        
         
         
     </section>
@@ -133,10 +139,8 @@
     </section>
     {{--  FIN SECCION QUIENES SOMOS  --}}
 
-
-
     {{-- SECTION SERVICIOS --}}
-    <div class="row">
+    <section class="row">
         <div class="container">
             {{-- servicio 1 --}}
             <div class="container-servicio">
@@ -207,7 +211,7 @@
 
 
         </div>
-    </div>
+    </section>
     {{-- FIN SECCION SERVICIOS --}}
 
     {{-- SECTION MERCADOS OBJETIVOS --}}
@@ -628,6 +632,7 @@
 
 </footer>
 
+</div>
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script>
@@ -736,8 +741,26 @@ $(document).on('ready', function() {
         }
     });
 
+    
+    $('.dropdown-toggle').click(function() {
+     // $(this).css({"padding-bottom":"none","margin-bottom":"none","border-bottom":"none"});
+     console.log('dropdown');
+        /* $('.navbar-nav .dropdown-target').css({"padding-bottom":"5px","margin-bottom":"-8px","border-bottom":"3px solid #30A920"}); */
+        $('.navbar-nav .dropdown-target').addClass('active');
+    });
+    $(document).on("click",function(e) {
+                    
+        var container = $(".dropdown-toggle");
+                            
+            if (!container.is(e.target) && container.has(e.target).length === 0) { 
+                $('.navbar-nav .dropdown-target').removeClass('active');               
+            }
+    });
+    $(".sb-container").scrollBox();
+    $(window).trigger("resize.scrollBox");
 
   });
+
 
 </script>
 
@@ -765,3 +788,4 @@ $(document).on('ready', function() {
     forcedImageWidth: 150,
     forcedImageHeight: 100,    
 --}}
+{{-- https://github.com/vmitsaras/js-offcanvas --}}

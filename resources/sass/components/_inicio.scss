@@ -5,8 +5,15 @@
     flex-direction: column;
     /* header */
     .container-navbar{
-       background-color: $grencustom;
+       background-color: rgba($color: #000000, $alpha: 0);
         padding: 0 30px;
+        position: absolute;
+        top: 20px;
+        margin-left:auto;
+        margin-right:auto;
+        left:0;
+        right:0;
+        z-index: 10 !important;
         .navbar-nav .nav-link{
             color: black;
            font-weight: normal;
@@ -25,6 +32,10 @@
         .carousel{
             .carousel-inner{
                 .carousel-item{
+                    img{
+                        min-height: 100vh;
+                        min-width: 100%;
+                    }
                     .carousel-caption{
                         text-align: left;
                         z-index: 0;
@@ -35,14 +46,14 @@
                             font-family: $font-family-sans-serif-black;
                             font-weight: bold;
                             text-transform: uppercase;
-                            font-size: .8em;
+                            font-size: $font-size-title;//1.5rem
                             .green-color-text{
                                 color: $grencustom;
                                 font-weight: bold;
                             }
                         }
                         p{
-                            font-size: .5em;
+                            font-size: $font-size-subtitle; //1.1rem
                         }
                     }
                 }
@@ -84,14 +95,11 @@
         .container-navbar{
             background-color: transparent;
             padding: 0 65px;
-            position: absolute;
+           
             order: 2;
-            top: 20px;
-            margin-left:auto;
-            margin-right:auto;
-            left:0;
-            right:0;
-            z-index: 10 !important;
+           
+            
+           
             .nav-link{
                 font-size: .87em;
                 color: white !important;
@@ -132,7 +140,9 @@
     }
 
     .navbar-nav .nav-link-cutsom:target{
-        border-bottom: none;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+        border-bottom: 3px solid $grencustom;
     }
     
 

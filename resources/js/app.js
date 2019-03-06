@@ -11,6 +11,9 @@ window.Vue = require('vue');
 import 'slick-carousel';
 require('jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel');
 
+//require('js-offcanvas/dist/_js/js-offcanvas');
+//import 'js-offcanvas';
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -34,6 +37,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
     el: '#app'
 }); */
 
-// inicializacion pluggin slick js
+require('./scripts/js-offcanvas');
 
 

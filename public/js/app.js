@@ -52644,7 +52644,9 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
-__webpack_require__(/*! jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel */ "./node_modules/jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel.js");
+__webpack_require__(/*! jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel */ "./node_modules/jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel.js"); //require('js-offcanvas/dist/_js/js-offcanvas');
+//import 'js-offcanvas';
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -52666,7 +52668,8 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 /* const app = new Vue({
     el: '#app'
 }); */
-// inicializacion pluggin slick js
+
+__webpack_require__(/*! ./scripts/js-offcanvas */ "./resources/js/scripts/js-offcanvas.js");
 
 /***/ }),
 
@@ -52794,6 +52797,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/scripts/js-offcanvas.js":
+/*!**********************************************!*\
+  !*** ./resources/js/scripts/js-offcanvas.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// https://github.com/filamentgroup/AppendAround
+
+/*! appendAround markup pattern. [c]2012, @scottjehl, Filament Group, Inc. MIT/GPL
+ how-to:
+ 1. Insert potential element containers throughout the DOM
+ 2. give each container a data-set attribute with a value that matches all other containers' values
+ 3. Place your appendAround content in one of the potential containers
+ 4. Call appendAround() on that element when the DOM is ready
+ */
 
 /***/ }),
 

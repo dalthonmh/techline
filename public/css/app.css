@@ -13751,6 +13751,31 @@ body {
   font-family: "Montserrat-Regular", arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #6d6d6d;
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(48, 169, 32, 0.9);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30A920;
+}
+
 /* Slider */
 
 .slick-slider {
@@ -14029,6 +14054,172 @@ body {
   opacity: 0.75;
 }
 
+.c-offcanvas {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: fixed;
+  min-height: 100%;
+  max-height: none;
+  top: 0;
+  display: block;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.c-offcanvas,
+.c-offcanvas-bg.c-offcanvas-bg--push,
+.c-offcanvas-bg.c-offcanvas-bg--reveal,
+.c-offcanvas-content-wrap {
+  transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.c-offcanvas.is-open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.c-offcanvas--opening {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.c-offcanvas.is-closed {
+  max-height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  box-shadow: none;
+}
+
+.c-offcanvas--overlay {
+  z-index: 1080;
+}
+
+.c-offcanvas-bg {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1079;
+  left: -100%;
+  background-color: transparent;
+  transition: background-color 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.c-offcanvas-bg.is-animating,
+.c-offcanvas-bg.is-open {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.68);
+  visibility: visible;
+}
+
+.c-offcanvas-bg.is-closed {
+  visibility: hidden;
+}
+
+.c-offcanvas-bg--closing.is-animating {
+  background: 0 0;
+}
+
+.c-offcanvas--left {
+  height: 100%;
+  width: 17em;
+  -webkit-transform: translate3d(-17em, 0, 0);
+          transform: translate3d(-17em, 0, 0);
+}
+
+.c-offcanvas--right {
+  height: 100%;
+  width: 17em;
+  right: 0;
+  -webkit-transform: translate3d(17em, 0, 0);
+          transform: translate3d(17em, 0, 0);
+}
+
+.c-offcanvas--bottom,
+.c-offcanvas--top {
+  left: 0;
+  right: 0;
+  height: 12.5em;
+  min-height: auto;
+  width: 100%;
+}
+
+.c-offcanvas--top {
+  top: 0;
+  -webkit-transform: translate3d(0, -12.5em, 0);
+          transform: translate3d(0, -12.5em, 0);
+}
+
+.c-offcanvas--bottom {
+  top: auto;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 12.5em, 0);
+          transform: translate3d(0, 12.5em, 0);
+}
+
+.c-offcanvas-content-wrap--reveal.c-offcanvas-content-wrap--left.is-open {
+  -webkit-transform: translate3d(17em, 0, 0);
+          transform: translate3d(17em, 0, 0);
+}
+
+.c-offcanvas-content-wrap--reveal.c-offcanvas-content-wrap--right.is-open {
+  -webkit-transform: translate3d(-17em, 0, 0);
+          transform: translate3d(-17em, 0, 0);
+}
+
+.c-offcanvas--reveal {
+  z-index: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.c-offcanvas-bg.c-offcanvas-bg--reveal.c-offcanvas-bg--left.is-open {
+  -webkit-transform: translate3d(17em, 0, 0);
+          transform: translate3d(17em, 0, 0);
+}
+
+.c-offcanvas-bg.c-offcanvas-bg--reveal.c-offcanvas-bg--right.is-open {
+  -webkit-transform: translate3d(-17em, 0, 0);
+          transform: translate3d(-17em, 0, 0);
+}
+
+.c-offcanvas--push {
+  z-index: 6;
+}
+
+.c-offcanvas--push--opening {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.c-offcanvas-content-wrap {
+  z-index: 3;
+}
+
+.c-offcanvas-content-wrap--push.c-offcanvas-content-wrap--left.is-open {
+  -webkit-transform: translate3d(17em, 0, 0);
+          transform: translate3d(17em, 0, 0);
+}
+
+.c-offcanvas-content-wrap--push.c-offcanvas-content-wrap--right.is-open {
+  -webkit-transform: translate3d(-17em, 0, 0);
+          transform: translate3d(-17em, 0, 0);
+}
+
+.c-offcanvas-bg.c-offcanvas-bg--push.c-offcanvas-bg--left.is-open {
+  -webkit-transform: translate3d(17em, 0, 0);
+          transform: translate3d(17em, 0, 0);
+}
+
+.c-offcanvas-bg.c-offcanvas-bg--push.c-offcanvas-bg--right.is-open {
+  -webkit-transform: translate3d(-17em, 0, 0);
+          transform: translate3d(-17em, 0, 0);
+}
+
 /* MOVILE FIRST */
 
 .principal {
@@ -14040,8 +14231,15 @@ body {
 }
 
 .principal .container-navbar {
-  background-color: #30A920;
+  background-color: rgba(0, 0, 0, 0);
   padding: 0 30px;
+  position: absolute;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 10 !important;
 }
 
 .principal .container-navbar .navbar-nav .nav-link {
@@ -14060,6 +14258,11 @@ body {
   order: 2;
 }
 
+.principal .carousel-customized .carousel .carousel-inner .carousel-item img {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
 .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption {
   text-align: left;
   z-index: 0;
@@ -14071,7 +14274,7 @@ body {
   font-family: "Montserrat-Black", arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 1.5rem;
 }
 
 .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption h5 .green-color-text {
@@ -14080,7 +14283,7 @@ body {
 }
 
 .principal .carousel-customized .carousel .carousel-inner .carousel-item .carousel-caption p {
-  font-size: 0.5em;
+  font-size: 1.1rem;
 }
 
 /* TABLET VERSION */
@@ -14111,14 +14314,7 @@ body {
   .principal .container-navbar {
     background-color: transparent;
     padding: 0 65px;
-    position: absolute;
     order: 2;
-    top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 10 !important;
   }
 
   .principal .container-navbar .nav-link {
@@ -14155,7 +14351,9 @@ body {
   }
 
   .navbar-nav .nav-link-cutsom:target {
-    border-bottom: none;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    border-bottom: 3px solid #30A920;
   }
 }
 
@@ -14949,6 +15147,7 @@ body {
   margin-top: 100px;
   height: 605px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .jumbotron_oficinas .card {
