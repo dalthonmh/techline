@@ -504,18 +504,32 @@
     <div class="jb_s_head">
         <h2>Nuestros <strong>Socios Estratégicos</strong></h2>
     </div>
-    <div class="jb_s_body">
-        <div class="jb_s_b_top">
-            <div class="t_item_img"><img src="/img/socios/1.png" alt=""></div>
-            <div class="t_item_img"><img src="/img/socios/2.jpg" alt=""></div>
-            <div class="t_item_img"><img src="/img/socios/3.png" alt=""></div>
+    <div class="jb_s_body row">
+        <div class="jb_s_b_top col-12 text-center">
+            <div class="row justify-content-center my-5">
+                <div class="col-12 col-md-3 item"><img class="img-fluid" src="/img/socios/1.png" alt=""></div>
+                <div class="col-12 col-md-3 item"><img class="img-fluid" src="/img/socios/2.jpg" alt=""></div>
+                <div class="col-12 col-md-3 item"><img class="img-fluid" src="/img/socios/3.png" alt=""></div>
+            </div>
         </div>
-        <div class="jb_s_b_bottom">
-            <div class="b_item_img"><img src="/img/socios/4.png" alt=""></div>
-            <div class="b_item_img"><img src="/img/socios/5.png" alt=""></div>
-            <div class="b_item_img"><img src="/img/socios/6.png" alt=""></div>
-            <div class="b_item_img"><img src="/img/socios/7.png" alt=""></div>
-            <div class="b_item_img"><img src="/img/socios/8.gif" alt=""></div>
+        <div class="jb_s_b_bottom col-12 text-center">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-2 mw-100 item">
+                    <img class="img-fluid" src="/img/socios/4.png" alt="">
+                </div>
+                <div class="col-12 col-md-2 mw-100 item">
+                    <img class="img-fluid" src="/img/socios/5.png" alt="">
+                </div>
+                <div class="col-12 col-md-2 mw-100 item">
+                    <img class="img-fluid" src="/img/socios/6.png" alt="">
+                </div>
+                <div class="col-12 col-md-2 mw-100 item">
+                    <img class="img-fluid" src="/img/socios/7.png" alt="">
+                </div>
+                <div class="col-12 col-md-2 mw-100 item">
+                    <img class="img-fluid" src="/img/socios/8.gif" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -579,7 +593,7 @@
                         <input type="text" class="form-control" id="input_correo" placeholder="¿Cúal es el motivo del mensage?">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <label for="exampleFormControlTextarea1">Mensaje</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Describa el mensaje" rows="3"></textarea>
                     </div>
                     <button class="btn btn-success pull-right">Enviar Mensage</button>
@@ -756,8 +770,6 @@ $(document).on('ready', function() {
                 $('.navbar-nav .dropdown-target').removeClass('active');               
             }
     });
-    $(".sb-container").scrollBox();
-    $(window).trigger("resize.scrollBox");
 
   });
 
