@@ -452,8 +452,8 @@
     <div class="jg_b_head">
         <h2>Últimas <strong>Publicaciones y Newsletter</strong></h2>
     </div>
-    <div class="jb_b_body">
-        <div class="jb_b_b_item">
+    <div class="jb_b_body row justify-content-center">
+        <div class="jb_b_b_item col-12 col-md-4 col-lg-3">
             <div class="item_tag">
                 <p class="it_t_black">PROYECTOS</p>
             </div>
@@ -466,7 +466,7 @@
                 <button class="btn btn-success">Ver más</button>
             </div>
         </div>
-        <div class="jb_b_b_item">
+        <div class="jb_b_b_item col-12 col-md-4 col-lg-3">
             <div class="item_tag">
                 <p class="it_t_red">NOTICIAS</p>
             </div>
@@ -479,7 +479,7 @@
                 <button class="btn btn-success">Ver más</button>
             </div>
         </div>
-        <div class="jb_b_b_item">
+        <div class="jb_b_b_item col-12 col-md-4 col-lg-3">
             <div class="item_tag">
                 <p class="it_t_black">PROYECTOS</p>
             </div>

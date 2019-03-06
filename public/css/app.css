@@ -14517,6 +14517,10 @@ body {
 
 /* MOVILE FIRST */
 
+.jumbotron-mercado {
+  margin-bottom: 0;
+}
+
 .jumbotron-mercado .container {
   margin-bottom: 30px;
 }
@@ -14647,6 +14651,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: white;
   padding: 20px;
+  margin-bottom: 0;
+  padding-bottom: 55px;
 }
 
 .jumbotron-proyectos .proyecto .proyeto_title .proyecto_title_h2 {
@@ -14789,6 +14795,7 @@ body {
   background-image: url("/img/giras/portada.jpg");
   background-size: cover;
   color: white;
+  margin-bottom: 0;
 }
 
 .jumbotron_girastecnologicas .jumbotron_gt_head {
@@ -14927,6 +14934,7 @@ body {
 
 .jumbotron_blog {
   background-color: white;
+  margin-bottom: 0;
 }
 
 .jumbotron_blog .jg_b_head {
@@ -14955,7 +14963,6 @@ body {
 .jumbotron_blog .jb_b_body .jb_b_b_item {
   margin: 30px auto;
   position: relative;
-  width: 300px;
 }
 
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_tag p {
@@ -14977,6 +14984,7 @@ body {
 
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_img img {
   height: 300px;
+  width: 100%;
 }
 
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_cont {
@@ -15022,12 +15030,6 @@ body {
   .jumbotron_blog .jg_b_head h2 {
     font-size: 1.5rem;
     height: 20px;
-  }
-
-  .jumbotron_blog .jb_b_body {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 100px;
   }
 }
 

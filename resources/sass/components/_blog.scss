@@ -1,6 +1,7 @@
 /* MOVILE FIRST */
 .jumbotron_blog{
     background-color: white;
+    margin-bottom: 0;
     .jg_b_head{
         margin-bottom: 25px;
         h2{
@@ -22,7 +23,7 @@
         .jb_b_b_item{
             margin: 30px auto;
             position: relative;
-            width: 300px;
+           
             .item_tag{
                 p{
                     color: white;
@@ -43,6 +44,7 @@
             .item_img{
                 img{
                     height: 300px;
+                    width: 100%;
                 }
             }
             .item_cont{
@@ -90,10 +92,7 @@
             }
         }
         .jb_b_body{
-            display: flex;
-            justify-content: space-around;
-            //margin: 40px 0 60px 0;
-            padding: 0 100px;
+            
         }
     }
 }
