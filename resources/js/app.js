@@ -10,9 +10,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 import 'slick-carousel';
 require('jQuery-Waterwheel-Carousel/js/jquery.waterwheelCarousel');
-
-//require('js-offcanvas/dist/_js/js-offcanvas');
-//import 'js-offcanvas';
+require('js-offcanvas/dist/_js/js-offcanvas.pkgd.min');
 
 /**
  * The following block of code may be used to automatically register your

@@ -15,8 +15,9 @@
         right:0;
         z-index: 10 !important;
         .navbar-nav .nav-link{
-            color: black;
+           color: black;
            font-weight: normal;
+           font-size: $font-size-base;
        }
        .circle-country img{
            border: 1px solid $grencustom;
@@ -67,6 +68,14 @@
 @media (min-width: 768px) {
     /*carusel*/
     .principal{
+        .container-navbar{
+            .c-offcanvas-content-wrap{
+                .nav-link{
+                    font-size: $font-size-subtitle;
+                    //color: #000 !important;
+                }
+            }
+        }
         .carousel-customized{
             order: 1;
             .carousel{
@@ -101,7 +110,7 @@
             
            
             .nav-link{
-                font-size: .87em;
+                font-size: $font-size-subtitle;
                 color: white !important;
             }
         }

@@ -20,7 +20,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
 </head>
 
 <body>
@@ -69,20 +68,20 @@
         {{-- fin carusel --}}
     
         {{-- navbar --}}
-        <div class="container-navbar ">
+        <div class="container-navbar">
             <div class="row justify-content-center align-items-center">
                 <div class="col-4 col-lg-3 container-img-logo">
                     <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="">
                 </div>
                 <div class="col-8 col-lg-9 ">
-                    <nav class="navbar navbar-expand-lg navbar-light navbar-customized">
+                    <div class="c-offcanvas-content-wrap">
+                      <nav class="navbar navbar-expand-lg navbar-light navbar-customized">
                         <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                    </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav ml-auto text-right">
+                        <button class="navbar-toggler js-offcanvas-toggler" data-button-options='{"wrapText":false}' aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExampleDefault" data-set="bs">
+                            <ul class="navbar-nav ml-auto text-right js-append-around">
                                 <a class="nav-item nav-link nav-link-cutsom active" href="#">Inicio <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Quienes somos</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Servicios</a>
@@ -104,9 +103,19 @@
                                         <span class="circle-country"><img src="/img/lang/fr.jpg" alt="espana"></span> &nbsp; Francess</a>
                                     </div>
                                 </div>
-                            </div>
+                            </ul>
                         </div>
                     </nav>
+                    <div class="c-offcanvas is-hidden" id="left" role="complementary">
+
+                        <div class="navbar">
+                            <button type="button" class="btn btn-block btn-outline-dark js-offcanvas-close">Close</button>
+                            <!-- container for appendAround -->
+                            <div class="offcanvas-nav d-block d-lg-none text-right" data-set="bs"></div>
+                        </div>
+                    </div>  
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -649,6 +658,8 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+
 <script>
 $(document).on('ready', function() {
     //proyectos destacados slider
@@ -771,8 +782,10 @@ $(document).on('ready', function() {
             }
     });
 
+
   });
 
+ 
 
 </script>
 
@@ -801,3 +814,4 @@ $(document).on('ready', function() {
     forcedImageHeight: 100,    
 --}}
 {{-- https://github.com/vmitsaras/js-offcanvas --}}
+{{-- nav bar flex end --}}

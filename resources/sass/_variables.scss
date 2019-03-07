@@ -9,6 +9,7 @@ $font-family-sans-serif-black: 'Montserrat-Black', arial, sans-serif;
 /* $font-family-sans-serif-regular:  arial, sans-serif;
 $font-family-sans-serif-bold:  arial, sans-serif;
 $font-family-sans-serif-black:  arial, sans-serif; */
+
 $font-size-small: .75rem;
 $font-size-base: 0.9rem;
 $font-size-subtitle: 1.1rem;
@@ -28,3 +29,8 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $grencustom: #30A920;
+
+$slick-font-path: "~slick-carousel/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "~slick-carousel/slick/" !default;
+$slick-arrow-color: black !default; 

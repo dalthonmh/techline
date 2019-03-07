@@ -2,13 +2,22 @@
 // Fonts
 /* @import url('https://fonts.googleapis.com/css?family=Nunito'); */
 @import 'fonts';
-@import '~font-awesome/css/font-awesome'; //para iconos
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome";
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//pluggins
+
+// - Slick carusel
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
+// - Js-offcanvas
+@import '~js-offcanvas/dist/_css/js-offcanvas';
 
 *{
     margin: 0;
@@ -39,13 +48,20 @@ body{
     ::-webkit-scrollbar-thumb:hover {
         background: $grencustom; 
   }
+  //js-offcanvas
+  body {
+    overflow-x: hidden;
+  }
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .offcanvas-nav .form-inline { display: none}
+  .is-hidden {  visibility: hidden;}
 
-// Slick carusel
-@import '~slick-carousel/slick/slick';
-@import '~slick-carousel/slick/slick-theme';
+
 
 //inicio
-@import '~js-offcanvas/dist/_css/minified/js-offcanvas';
 @import 'components/inicio';
 
 //section about
