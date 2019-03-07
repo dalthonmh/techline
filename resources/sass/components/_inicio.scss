@@ -52,6 +52,12 @@
                         margin-right: .2rem;
                         border-radius: 1px;
                     }
+                    #target-dropdown{
+                        display: block;
+                    }
+                    #dropdownMenuLink:hover::before{
+                        content: none;
+                    }
                 }
                 .navbar{
                     .js-offcanvas-close{

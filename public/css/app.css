@@ -13372,6 +13372,12 @@ body {
   margin-right: 0.2rem;
   border-radius: 1px;
 }
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav #target-dropdown {
+  display: block;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav #dropdownMenuLink:hover::before {
+  content: none;
+}
 .principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar .js-offcanvas-close {
   outline: none;
 }
@@ -13637,16 +13643,16 @@ body {
   font-size: 1em;
 }
 .jumbotron-mercado .row .container-mercados .mercado-1 {
-  background-image: url("/img/mercado/peru.png");
+  background-image: url("/img/mercado/peru.jpg");
 }
 .jumbotron-mercado .row .container-mercados .mercado-2 {
-  background-image: url("/img/mercado/china.png");
+  background-image: url("/img/mercado/china.jpg");
 }
 .jumbotron-mercado .row .container-mercados .mercado-3 {
-  background-image: url("/img/mercado/hongkong.png");
+  background-image: url("/img/mercado/hongkong.jpg");
 }
 .jumbotron-mercado .row .container-mercados .mercado-4 {
-  background-image: url("/img/mercado/australia.png");
+  background-image: url("/img/mercado/australia.jpg");
 }
 
 /* TABLET VERSION */
@@ -13886,7 +13892,7 @@ body {
 }
 .jumbotron_girastecnologicas .jumbotron_gt_middle .carousel-container #carousel {
   width: 85%;
-  height: 150px;
+  height: 300px;
   position: relative;
   clear: both;
   overflow: hidden;
@@ -13938,6 +13944,13 @@ body {
   }
   .jumbotron_girastecnologicas .jumbotron_gt_head h3 {
     font-size: 1.1rem;
+  }
+  .jumbotron_girastecnologicas .jumbotron_gt_footer .numbers {
+    display: flex;
+    justify-content: space-around;
+  }
+  .jumbotron_girastecnologicas .jumbotron_gt_footer .numbers .jb_gt_g_item {
+    padding: 1rem;
   }
 }
 /*DESKTOP VERSION*/

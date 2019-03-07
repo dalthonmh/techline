@@ -61,7 +61,7 @@
             }
             #carousel {
                 width:85%; // cambia en el responsive
-                height:150px; // cambia responsive
+                height:300px; // cambia responsive
                 position:relative;
                 clear:both;
                 overflow:hidden;
@@ -121,6 +121,15 @@
             }
             h3{
                 font-size: $font-size-subtitle;
+            }
+        }
+        .jumbotron_gt_footer{
+            .numbers{
+                display: flex;
+                justify-content: space-around;
+                .jb_gt_g_item{
+                    padding: 1rem;
+                }
             }
         }
     }

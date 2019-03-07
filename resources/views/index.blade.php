@@ -71,7 +71,7 @@
         <div class="container-navbar">
             <div class="row justify-content-center align-items-center">
                 <div class="col-4 col-lg-3 container-img-logo">
-                    <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="">
+                    <img class="img-fluid" alt="Responsive image" src="/img/logo-techline.png" alt="logo techline">
                 </div>
                 <div class="col-8 col-lg-9 ">
                     <div class="c-offcanvas-content-wrap">
@@ -83,13 +83,13 @@
                         <div class="collapse navbar-collapse" id="navbarsExampleDefault" data-set="bs">
                             <ul class="navbar-nav ml-auto text-left js-append-around">
                                 <a class="nav-item nav-link nav-link-cutsom active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link nav-link-cutsom" href="https://www.google.com.pe/">Quienes somos</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="#">Quienes somos</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Servicios</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Proyectos</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Blog</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">RSE</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Contáctanos</a>
-                                <div class="dropdown show nav-link-cutsom dropdown-target">
+                                <div class="dropdown show nav-link-cutsom dropdown-target" id="target-dropdown">
                                     <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <span class="circle-country"><img src="/img/lang/es.jpg" alt="espana"></span> &nbsp; Español
                                     </a>
@@ -125,8 +125,7 @@
         
         
         
-    </section>
-    
+    </section id="about">
     {{--  SECTION QUIENES SOMOS  --}}
     <section class="container-about">
         <div class="jumbotron jumbotron-fluid jumbotron-img">
@@ -699,22 +698,24 @@ $(document).on('ready', function() {
     ]
     });
 
+    //jquery responsive  reakpoints
+
+
+    // Compare Trigger
     // jquery water carousel
-    var carousel = $("#carousel").waterwheelCarousel({
+    carousel = $("#carousel").waterwheelCarousel({
         flankingItems: 2, //cantidad de imagenes al costado
         opacityMultiplier: 1, //cambia la opaciodad
-        //horizonOffset: 100, //las otras imagenes se vienen de arriba de este tamaño
         autoPlay: 1000,
         keyboardNav: true, //habilita tecla flecha para mover los slides
-        //horizon: 20, // lo mueve para arriba
-        //separation: 200,
-        // agregar los breakpoints
-        separation: 100,
-        forcedImageWidth: 150,
-        forcedImageHeight: 100,  
-
-        
+        separation: 190,
+        forcedImageWidth: 480,
+        //forcedImageHeight: 400,  
     });
+    
+    
+
+    
 
     $('#prev').bind('click', function () {
         carousel.prev();
@@ -731,12 +732,9 @@ $(document).on('ready', function() {
         newOptions = eval("(" + datos + ")");
         carousel.reload(newOptions);
         return false;
-
     });
 
-
     
-        
 
 
 
