@@ -14,17 +14,56 @@
         left:0;
         right:0;
         z-index: 10 !important;
-        .navbar-nav .nav-link{
-           color: black;
-           font-weight: normal;
-           font-size: $font-size-base;
-       }
-       .circle-country img{
-           border: 1px solid $grencustom;
-           border-radius: 50%;
-           width: 20px;
-           height: 20px;
-       }
+        .c-offcanvas-content-wrap{
+            .navbar{
+                padding: 2rem; //revisar
+                .navbar-nav{
+                    .nav-link{
+                       color: black;
+                       font-weight: normal;
+                       font-size: $font-size-base;
+                   }
+                }
+               .circle-country img{
+                   border: 1px solid $grencustom;
+                   border-radius: 50%;
+                   width: 20px;
+                   height: 20px;
+               }
+            }
+            .c-offcanvas{
+                .navbar-nav{
+                    .nav-link-cutsom{
+                        color: $grencustom;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .nav-link:hover{
+                        transition: all .3s ease;
+                    }
+                    .nav-link:hover::before{
+                        content: "";
+                        transition: all .3s ease;
+                        display: inline-block;
+                        height: 3px;
+                        width: 12px;
+                        background-color: #f42e18;
+                        margin: auto 0;
+                        margin-right: .2rem;
+                        border-radius: 1px;
+                    }
+                }
+                .navbar{
+                    .js-offcanvas-close{
+                        outline: none;
+                        .fa-times{
+                            font-size: 1.5rem;
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
     
     }
     /* carusel */
@@ -70,9 +109,15 @@
     .principal{
         .container-navbar{
             .c-offcanvas-content-wrap{
-                .nav-link{
-                    font-size: $font-size-subtitle;
-                    //color: #000 !important;
+                .navbar{
+                    .collapse{
+                        .navbar-nav{
+                            .nav-link{
+                                font-size: $font-size-subtitle;
+                                //color: #000 !important;
+                            }
+                        }
+                    }
                 }
             }
         }

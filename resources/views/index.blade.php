@@ -81,9 +81,9 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExampleDefault" data-set="bs">
-                            <ul class="navbar-nav ml-auto text-right js-append-around">
+                            <ul class="navbar-nav ml-auto text-left js-append-around">
                                 <a class="nav-item nav-link nav-link-cutsom active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link nav-link-cutsom" href="#">Quienes somos</a>
+                                <a class="nav-item nav-link nav-link-cutsom" href="https://www.google.com.pe/">Quienes somos</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Servicios</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Proyectos</a>
                                 <a class="nav-item nav-link nav-link-cutsom" href="#">Blog</a>
@@ -108,10 +108,10 @@
                     </nav>
                     <div class="c-offcanvas is-hidden" id="left" role="complementary">
 
-                        <div class="navbar">
-                            <button type="button" class="btn btn-block btn-outline-dark js-offcanvas-close">Close</button>
+                        <div class="navbar d-inline-block">
+                            <button type="button" class="btn js-offcanvas-close p-0"><i class="fa fa-times" aria-hidden="true"></i></button>
                             <!-- container for appendAround -->
-                            <div class="offcanvas-nav d-block d-lg-none text-right" data-set="bs"></div>
+                            <div class="offcanvas-nav d-block d-lg-none text-left" data-set="bs"></div>
                         </div>
                     </div>  
                     </div>

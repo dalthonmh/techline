@@ -13339,16 +13339,45 @@ body {
   right: 0;
   z-index: 10 !important;
 }
-.principal .container-navbar .navbar-nav .nav-link {
+.principal .container-navbar .c-offcanvas-content-wrap .navbar {
+  padding: 2rem;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .navbar .navbar-nav .nav-link {
   color: black;
   font-weight: normal;
   font-size: 0.9rem;
 }
-.principal .container-navbar .circle-country img {
+.principal .container-navbar .c-offcanvas-content-wrap .navbar .circle-country img {
   border: 1px solid #30A920;
   border-radius: 50%;
   width: 20px;
   height: 20px;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link-cutsom {
+  color: #30A920;
+  display: flex;
+  align-items: center;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link:hover {
+  transition: all 0.3s ease;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link:hover::before {
+  content: "";
+  transition: all 0.3s ease;
+  display: inline-block;
+  height: 3px;
+  width: 12px;
+  background-color: #f42e18;
+  margin: auto 0;
+  margin-right: 0.2rem;
+  border-radius: 1px;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar .js-offcanvas-close {
+  outline: none;
+}
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar .js-offcanvas-close .fa-times {
+  font-size: 1.5rem;
+  color: red;
 }
 .principal .carousel-customized {
   order: 2;
@@ -13380,7 +13409,7 @@ body {
 /* TABLET VERSION */
 @media (min-width: 768px) {
   /*carusel*/
-  .principal .container-navbar .c-offcanvas-content-wrap .nav-link {
+  .principal .container-navbar .c-offcanvas-content-wrap .navbar .collapse .navbar-nav .nav-link {
     font-size: 1.1rem;
   }
   .principal .carousel-customized {
