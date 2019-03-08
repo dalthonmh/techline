@@ -227,33 +227,41 @@
         <div class="container">
             <h1 class="display-border">Nuestros <strong>Mercados Objetivos</strong></h1>
         </div>
-        <div class="row" style="margin:0;">
-            <div class="col-md-3 container-mercados">
-                <div class="jumbotron jumbotron-fluid mercado-1">
+        <div class="row jb_m_items" style="margin:0;">
+            <div class="col-md-3 jumbotron jumbotron-fluid mercado mercado-1">
+                <div class="container">
+                    <div class="display-lead">
                         <h1 class="display-4">PERÚ</h1>
                         <p class="lead">Oportunidades en el serctor minero.</p>
-                        <button class="btn btn-success">Ver más</button>
+                    </div>
+                    <button class="btn btn-success">Ver más</button>
                 </div>
             </div>
-            <div class="col-md-3 container-mercados">
-                <div class="jumbotron jumbotron-fluid mercado-2">
+            <div class="col-md-3 jumbotron jumbotron-fluid mercado mercado-2">
+                <div class="container">
+                    <div class="display-lead">
                         <h1 class="display-4">CHINA</h1>
                         <p class="lead">Acceso a nuevos mercados, nuevos clientes, nuevos proveedores en el Asia Pacífico.</p>
-                        <button class="btn btn-success">Ver más</button>
+                    </div>
+                    <button class="btn btn-success">Ver más</button>
                 </div>
             </div>
-            <div class="col-md-3 container-mercados">
-                <div class="jumbotron jumbotron-fluid mercado-3">
+            <div class="col-md-3 jumbotron jumbotron-fluid mercado mercado-3">
+                <div class="container">
+                    <div class="display-lead">
                         <h1 class="display-4">HONG KONG</h1>
                         <p class="lead">Plataforma comercialy financiera en Asia para Pymes de la ZICOSUR.</p>
-                        <button class="btn btn-success">Ver más</button>
+                    </div>
+                    <button class="btn btn-success">Ver más</button>
                 </div>
             </div>
-            <div class="col-md-3 container-mercados">
-                <div class="jumbotron jumbotron-fluid mercado-4">
+            <div class="col-md-3 jumbotron jumbotron-fluid mercado mercado-4">
+                <div class="container">
+                    <div class="display-lead">
                         <h1 class="display-4">AUSTRALIA</h1>
                         <p class="lead">Oportunidades comerciales y tecnológicas para proveedores mineros e industriales.</p>
-                        <button class="btn btn-success">Ver más</button>
+                    </div>
+                    <button class="btn btn-success">Ver más</button>
                 </div>
             </div>
         </div>
@@ -728,7 +736,7 @@ $(document).on('ready', function() {
     });
 
     $('#reload').bind('click', function () {
-        var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 100}"; //string
+        var datos = "{flankingItems: 2,autoPlay: 1000,keyboardNav: true,opacityMultiplier: 1,separation: 190}"; //string
         newOptions = eval("(" + datos + ")");
         carousel.reload(newOptions);
         return false;
