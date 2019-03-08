@@ -13330,7 +13330,7 @@ body {
 }
 .principal .container-navbar {
   background-color: rgba(0, 0, 0, 0);
-  padding: 0 30px;
+  padding: 0;
   position: absolute;
   top: 20px;
   margin-left: auto;
@@ -13358,7 +13358,7 @@ body {
   display: flex;
   align-items: center;
 }
-.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link:hover {
+.principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link {
   transition: all 0.3s ease;
 }
 .principal .container-navbar .c-offcanvas-content-wrap .c-offcanvas .navbar-nav .nav-link:hover::before {
@@ -13412,11 +13412,18 @@ body {
   font-size: 1.1rem;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 /* TABLET VERSION */
 @media (min-width: 768px) {
   /*carusel*/
+  .principal .container-navbar {
+    padding: 0 30px;
+  }
   .principal .container-navbar .c-offcanvas-content-wrap .navbar .collapse .navbar-nav .nav-link {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .principal .carousel-customized {
     order: 1;
@@ -13622,6 +13629,7 @@ body {
   background-repeat: no-repeat;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 0;
 }
 .jumbotron-mercado .jb_m_items .mercado .container {
   position: relative;
@@ -13632,7 +13640,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: all 0.8s ease-in;
 }
 .jumbotron-mercado .jb_m_items .mercado .container .display-lead .display-4 {
   font-size: 1.5em;
@@ -13643,6 +13650,10 @@ body {
 .jumbotron-mercado .jb_m_items .mercado .container .btn-success {
   margin-bottom: -50px;
   display: none;
+  border-radius: 0;
+  background-color: #30A920;
+  font-weight: bold;
+  padding: 5px 35px;
 }
 .jumbotron-mercado .jb_m_items .mercado .container:hover .btn-success {
   display: block;
@@ -13986,6 +13997,7 @@ body {
 .jumbotron_blog .jb_b_body .jb_b_b_item {
   margin: 30px auto;
   position: relative;
+  padding: 0;
 }
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_tag p {
   color: white;
@@ -14006,7 +14018,7 @@ body {
   width: 100%;
 }
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_cont {
-  padding: 30px;
+  padding: 34px 30px;
 }
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_cont h3 {
   font-weight: bold;
@@ -14014,7 +14026,7 @@ body {
 }
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_cont p {
   text-align: justify;
-  margin: 15px 0 25px 0;
+  margin: 15px 0 30px 0;
   font-size: 0.9rem;
 }
 .jumbotron_blog .jb_b_body .jb_b_b_item .item_cont button {
@@ -14091,28 +14103,41 @@ body {
 */
 /* MOVILE FIRST */
 .jumbotron_oficinas {
-  background-image: url("/img/mapa_2.jpg");
-  background-size: cover;
+  background: url("/img/mapa_2.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
   position: relative;
   margin-top: 100px;
   height: 605px;
   text-align: center;
   margin-bottom: 0;
+  background-size: 100% 100%;
 }
 .jumbotron_oficinas .card {
   background-color: #30A920;
   position: absolute;
-  border-radius: 0 0 15px 0;
+  border-radius: 0 0 50px 0;
   left: 0;
   top: -130px;
   color: black;
   text-align: right;
+  font-weight: bold;
+}
+.jumbotron_oficinas .card .card-title {
+  font-size: 1.1rem;
+}
+.jumbotron_oficinas .card .card-text {
+  font-size: 0.9rem;
 }
 
 /* TABLET VERSION */
 @media (min-width: 768px) {
   .jumbotron_oficinas {
+    background: url("/img/mapa_2.jpg");
     margin-top: 130px;
+  }
+  .jumbotron_oficinas .card .card-title {
+    font-size: 1.5rem;
   }
 }
 /* MOVILE FIRST */
@@ -14143,6 +14168,7 @@ body {
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  color: white;
 }
 .jumbotron-trabajo .container .jb_bottom .jb_footer .form-group label {
   font-size: 0.75rem;
